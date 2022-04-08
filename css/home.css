@@ -1,0 +1,488 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+#body{
+    background: url(../img/fndo-1.jpg) fixed no-repeat left bottom;
+}
+#grid-area{
+    width: 100%;
+    display: grid;
+    max-width: 1500px;
+    margin: 0 auto;
+    gap: 5px;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+    grid-template-rows: 100px auto ;
+}
+.header{
+    grid-area: header;
+    background-color: white;
+    text-align: center;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+.header__banner nav a img {
+    width: 500px;
+    margin: 0% auto;   
+}
+.header__seach {
+    margin-top: 20px;
+    margin-right: 50px;
+    padding: 5px;
+    text-align: right;
+}
+.header__seach img {
+    width: 45px;
+    position: absolute; 
+}
+.header__seach input {
+    width:250px ;
+    height: 30px;
+    padding: 0 10px;
+    font-weight: 600;
+    font-size: 15px;
+    color: grey;
+    border: 2px solid black;
+}
+.header__menu nav ul li { 
+    list-style-type: none;
+    font-size: 20px;
+    background-color:white;
+    display: inline-block;
+    margin: 10px auto 0% auto;
+    text-align: center;
+    padding: 2px 15px 0% 15px;
+    text-transform: uppercase;
+   
+}
+.header__menu a {
+   text-decoration: none;
+   color:black;
+   font-weight: 700;
+   display: flex;
+   justify-content: space-between;
+}
+.main {
+    width: 100%;
+    grid-area: main;
+    text-align: center;
+    margin-top: 100px;
+    background: url(../img/fndo-1.jpg) fixed no-repeat right bottom;
+    
+}
+.section {
+    width: 100%;
+    max-width: 900px; 
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.section__titulo {
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+   margin: 40px auto 10px auto ;
+}
+.section__imagen img {
+    margin: 10px auto 20px auto;
+    width: 900px;
+}
+.articulo__titulo h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-decoration: underline;
+}
+.articulo__titulo p {
+    color: grey;
+    font-weight: 600;
+    width: 700px;
+    font-size: medium;
+    margin: 10px auto 30px auto;
+    text-align: center;     
+}
+.section__etiquetas {
+    margin: 50px auto ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+.section__etiquetasjw nav a img {
+    width: 400px;
+} 
+.section__etiquetascl img {
+    width: 300px;
+}
+.section__beber {
+    background-color: #fcf7de;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section__beber h2 {
+    font-size: 45px;
+    font-weight: 900;
+    margin-top: 20px auto 10px auto;  
+}   
+.section__beber img {
+    width: 400px;
+    margin-top: 20px;
+}
+.section__beber p {
+    font-size: 20px;
+    font-weight: 500;
+    color: grey;
+    margin-top: 20px;
+}
+
+.section__logo img {
+    background-color: white;
+    width: 200px;
+    margin: 50px auto 50px auto;
+}
+
+
+
+.footer {
+    width: 100%;
+    grid-area: footer;
+    background-color: black;
+    text-align: center;
+}
+.footer__titulo {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.footer__redes nav ul li {
+    padding: 10px 15px;
+    display: inline;
+    margin: 40px auto 20px auto;
+}
+.footer__redes img {
+    width: 100px;
+}
+.footer__pie img {
+    width: 200px;
+}
+.footer__pie p {
+    font-weight: 300;
+    color: white;
+    margin: 10px 80px 0% 80px;
+    text-align: center;
+    font-size: 15px;
+}
+@media (min-width: 1024px) and  (max-width: 1800px) {
+    .header__menu input{
+        display: none;
+    }
+    .header__menu label{
+        display: none;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+    #body{
+        background-image: none;
+    }
+    .header__seach input{
+        display: none;
+    }
+    .header__banner nav a img {
+        width: 350px;
+    }
+    .header__menu nav ul li{
+        font-size: 15px;
+    }
+    .header__menu input{
+        display: none;
+    }
+    .header__menu label{
+        display: none;
+    }
+    .main{
+        background-image: none;
+        margin-top: 50px;
+    }
+    .section__titulo{
+        font-size: 25px;
+        margin-top: 0%;
+    }
+    .section__imagen img{
+        width: auto;
+    }
+    .articulo__titulo{
+        width: 100%;
+    }
+
+}
+
+
+@media (min-width: 600px) and (max-width: 767px){
+    #body{
+        background-image: none;
+    }
+    .header__menu input{
+        display: none;
+    }
+    .header__menu label{
+        display: none;
+    }
+    .header__seach input{
+       display: none;
+    }
+    .header__seach img{
+        width: 30px;
+    }
+    .header__banner nav a img {
+        width: 300px;
+    }
+    .header__menu nav ul li{
+        font-size: 15px;
+    }
+    .main{
+        background-image: none;
+        margin-top: 50px;
+    }
+    .section__titulo{
+        font-size: 20px;
+    }
+    .section__imagen img{
+        width: 550px;
+    }
+    .articulo__titulo{
+        width: 100%;
+    }
+    .section__etiquetasjw nav a img{
+        width: 300px;
+    }
+    .articulo__titulo p{
+        width: 400px;
+    }
+    .section__etiquetascl img{
+        width: 200px;
+    }
+    .section__beber h2{
+        font-size: 30px;
+    }
+    .section__beber img{
+        width: 300px;
+    }
+    .section__beber p{
+        font-size: 15px;
+    }
+    .footer__redes img{
+        width: 80px;
+    }
+    .footer__pie  img{
+        width: 200px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 599px){
+    #body{
+        background-image: none;
+    }
+    .header__menu input{
+        display: none;
+    }
+    .header__menu label{
+        display: none;
+    }
+    .header__seach input{
+        display: none;
+    }
+    .header__seach img{
+        width: 30px;
+    }
+    .header__banner nav a img {
+        width: 300px;
+    }
+    .header__menu nav ul li{
+        font-size: 12px;
+    }
+    .main{
+        background-image: none;
+        margin-top: 50px;
+    }
+    .section__titulo{
+        font-size: 15px;
+    }
+    .section__imagen img{
+        width: 400px;
+        margin: auto;
+    }
+    .articulo__titulo p{
+        width: 300px;
+    }
+    .section__etiquetasjw nav a img {
+        width: 300px;
+    }
+    .section__etiquetascl img{
+        width: 200px;
+    }
+    .section__beber h2{
+        font-size: 25px;
+    }
+    .section__beber img{
+        width: 250px;
+    }
+    .section__beber p{
+        font-size: 15px;
+    }
+    .section__logo img{
+        width: 150px;
+    }
+    .footer__titulo{
+        font-size: 20px;
+    }
+    .footer__redes img{
+        width: 50px;
+    }
+    .footer__pie  img{
+        width: 150px;
+    }
+    .footer__pie p{
+       font-size: 12px;
+    }
+}
+@media (min-width: 280px) and (max-width: 479px){
+    #body{
+        background-image: none;
+        background-color: black;
+        
+    }
+    .header__menu{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    ul{
+       display: none;
+    } 
+    input:checked  ~ ul{
+     display:block;
+    }
+    input {
+      display: none;
+    }
+  label {
+     box-sizing: border-box;
+     display: inline-block;
+     border: 2px solid white;
+     border-radius: 5px;
+     width: 40px;
+     height: 30px;
+     line-height: 30px;
+     font-weight: bold;
+     text-align: center;
+     user-select: none;
+     margin-left: 0%;
+     margin-top: 0%;
+     
+    }
+    label:hover{
+       background: white;
+    }
+   input:checked ~ label {
+     background: white; 
+    }
+   ul{
+      margin-top:0;
+      padding: 0;
+      width: 200px;
+    } 
+   li {
+     display: block;
+     background: lightgrey;
+     margin: 0;
+     padding: 10px;
+     list-style: none;
+     
+    } 
+   li:hover {
+     filter: brightness(110%);
+    }
+    .header__seach input{
+        display: none;
+    }
+    .header__seach img{
+        display: none;
+    }
+    .header__banner nav a img {
+        width: 300px;
+    }
+    .header__menu nav ul li{
+        font-size: 10px;
+    }
+    .main{
+        background-image: none;
+        margin-top: 50px;
+    }
+    .section__titulo{
+        font-size: 14px;
+        color: white;
+    }
+    .section__imagen img{
+        width: 350px;
+        margin: auto;
+    }
+    .articulo__titulo h2{
+        font-size: 25px;
+    }
+    .articulo__titulo p{
+        width: 220px;
+    }
+    .section__etiquetasjw nav a img {
+        width: 250px;
+    }
+    .section__etiquetascl img{
+        width: 170px;
+    }
+    .section__beber h2{
+        font-size: 20px;
+        color: black;
+    }
+    .section__beber img{
+        width: 210px;
+    }
+    .section__beber p{
+        font-size: 13px;
+    }
+    .section__logo img{
+        width: 120px;
+    }
+    .footer__titulo{
+        font-size: 17px;
+    }
+    .footer__titulo h2{
+        display: none;
+    }
+    .footer__redes nav ul li a img{
+        display: none;
+    }
+    .footer__pie  img{
+        width: 200px;
+    }
+    .footer__pie p{
+       font-size: 10px;
+    }
+}

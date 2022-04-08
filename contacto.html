@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOHNNIE WALKER|Contacto</title>
+    <link rel="shortcut icon" href="./img/jw-logo-black.png">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+    <div id="grid-area">
+        <header class="header">
+          <div class="header__seach">
+                <input type="seach" placeholder="Buscar">
+                <img src="./img/seach-logo.jpg" alt="seach logo">
+          </div>
+          <div class="header__banner">
+              <nav>
+                   <a href="./index.html" target="self">
+                     <img src="./img/johnnie-walker-men-logo.png" alt="banner logo" >
+                  </a>
+              </nav>
+          </div>  
+          <div class="header__menu">
+              <nav>
+                  <input type="checkbox" id="menu">
+                  <label for="menu"> ☰ </label>
+                  <ul>
+                      <li><a href="./index.html">Home</a></li>|
+                      <li><a href="./historia-johnnie-waker.html">La Historia de Johnnie Walker</a></li>|
+                      <li><a href="./etiquetas.html">Nuestras Etiquetas</a></li>|
+                      <li><a href="./jonh-walker-and-song-blends.html">John Walker & Sons Exclusive Blends</a></li>|
+                      <li><a href="./contacto.html">Contacto</a></li>
+                  </ul>
+             </nav>
+         </div>
+      </header>
+        <hr>
+      <main class="main">
+          <section>
+              <div class="section__contacto">
+                  <h1>CONTACTO</h1>
+              </div>
+         </section>
+          <div class="form" >
+              <form action="enviar.php" method="get" enctype="text/plain">
+                  <fieldset>
+                     <legend>DATOS PERSONALES</legend>
+                      <div class="form__name">
+                         <label for="name">Nombre:</label>
+                         <input type="nombre:" id="name" placeholder="Ingrese su nombre">
+                      </div>
+                      <div class="form__surname">
+                          <label for="last-name">Apellido:</label>
+                          <input type="apellido:" id="last-name" placeholder="Ingrese su apellido">
+                      </div>
+                      <div class="form__mail">
+                          <label for="mail">E-mail:</label>
+                          <input type="E-mail:" id="mail" placeholder="Ingrese su E-mail" required >
+                      </div>
+                      <div class="form__tel">
+                          <label for="telefono"><strong>Telefono</strong>(opcional):</label>
+                          <input type="Telefono(opcional):" id="telefono" placeholder="Ingrese su Telefono">
+                      </div>
+                      <div class="form__genero">
+                          <select name="genero" id="genero">
+                              <option value="0">Seleccione su Genero</option>
+                              <option value="1">Masculino</option>
+                              <option value="2">Femenino</option>
+                              <option value="3">Otros</option>
+                          </select>
+                      </div>
+                  </fieldset>
+                  <div class="form__newsletter">
+                      <label for="newsletter">¿Desea recibier el Newsletter?</label>
+                      <input type="checkbox" id="newsletter" value="1">
+                  </div>
+                  <div class="form__txt">
+                      <label for="multi"></label>
+                      <textarea name="Su-consulta" id="multi" cols="60" rows="10" placeholder="Su consulta..."></textarea>
+                   </div>
+                   <div class="form__button">
+                       <input type="submit" value="Enviar">
+                       <input type="reset" value="Borrar todo">
+                   </div>
+              </form>
+          </div>
+          <hr>
+       </main>
+       <footer class="footer">
+           <div class="footer__titulo">
+              <h2>NUESTRAS REDES</h2>
+          </div>
+          <div class="footer__redes">
+               <nav>
+                   <ul>
+                       <li><a href="https://www.instagram.com/johnniewalker/" target="_blank"> <img src="./img/logo-instagram.png" alt="logo instagram"></a></li>
+                       <li><a href="https://www.facebook.com/johnniewalkerargentina" target="_blank"><img src="./img/logo-fb.png" alt="logo fb" ></a></li>
+                       <li><a href="https://twitter.com/JohnnieWalkerAR" target="_blank"><img src="./img/logo-twitter.png" alt="logo twitter" ></a></li>
+                       <li><a href="https://www.youtube.com/user/johnniewalkerwhisky" target="_blank"> <img src="./img/logo-youTube.png" alt="logo youtube"></a></li>
+                  </ul>
+               </nav>
+               <div class="footer__pie"> 
+                   <img src="./img/johnnie-walker-logo-vent.png" alt="banner negro jw" >
+                   <p>JOHNNIE WALKER, JOHNNIE WALKER HOUSE, JOHN WALKER & SONS, RED LABEL, BLACK LABEL, DOUBLE BLACK, GOLD LABEL RESERVE, PLATINUM LABEL, BLUE LABEL, XR, KING GEORGE V, JOHN WALKER & SONS ODYSSEY, THE JOHN WALKER, DIAMOND JUBILEE , EL AVENTURERO, EL CAMINO DE LAS ESPECIAS, LA RUTA DEL ORO Y LAS PALABRAS DE LA RUTA REAL, EL DISPOSITIVO DE LA FIGURA QUE CAMINA Y LOS LOGOTIPOS ASOCIADOS, LA ALEGRÍA TE LLEVARÁ MÁS LEJOS SON MARCAS COMERCIALES. © JOHN WALKER & SONS 2015. LA BANDERA DEL EXPLORERS CLUB Y LOS LOGOTIPOS ASOCIADOS SON MARCAS COMERCIALES DEL EXPLORERS CLUB, UNA ORGANIZACIÓN GLOBAL SIN FINES DE LUCRO CON SEDE EN LA CIUDAD DE NUEVA YORK." JOHN WALKER & SONS 2016</p>
+                   <p>NO COMPARTA CON NADIE MENOR DE LA EDAD LEGAL PARA COMPRAR ALCOHOL. BEBA CON RESPONSABILIDAD.</p>
+               </div>
+           </div>
+       </footer>
+   </div>
+</body>
+</html>

@@ -1,0 +1,664 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+#body {
+    background: url(../img/fndo.jpg) right bottom fixed no-repeat;
+}
+#grid-area{
+    width: 100%;
+    display: grid;
+    max-width: 1500px;
+    margin: 0 auto;
+    gap: 5px;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+    grid-template-rows: 100px auto ;
+}
+.header{
+    grid-area: header;
+    background-color: white;
+    text-align: center;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+.header__banner nav a img {
+    width: 500px;
+    margin: 0% auto;   
+}
+.header__seach {
+    margin-top: 20px;
+    margin-right: 50px;
+    padding: 5px;
+    text-align: right;
+}
+.header__seach img {
+    width: 45px;
+    position: absolute; 
+}
+.header__seach input {
+    width:250px ;
+    height: 30px;
+    padding: 0 10px;
+    font-weight: 600;
+    font-size: 15px;
+    color: grey;
+    border: 2px solid black;
+}
+.header__menu nav ul li { 
+    list-style-type: none;
+    font-size: 20px;
+    background-color:white;
+    display: inline-block;
+    margin: 10px auto 0% auto;
+    text-align: center;
+    padding: 2px 15px 0% 15px;
+    text-transform: uppercase;
+   
+}
+.header__menu a {
+   text-decoration: none;
+   color:black;
+   font-weight: 700;
+   display: flex;
+   justify-content: space-between;
+}
+.main{
+    grid-area: main;
+    text-align: center;
+    margin-top: 100px;
+    background: url(../img/fondo-5.png) left bottom fixed no-repeat;
+    
+   
+}
+.section__contacto{
+    background-image: url(../img/banner-titulo.jpg);
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 60px;
+    font-weight: 900;
+    margin-top: 50px auto 30px auto;
+}
+.form {
+    width: 700px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsl(50deg 83% 93%);
+}
+.form fieldset {
+    border: 3px solid #e49c00;
+    
+}
+.form fieldset legend {
+    color: black;
+    font-size: 30px;
+    font-weight: 800;
+}
+.form__name {
+    margin-right: 15px;
+}
+.form__name label {
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.form__name input {
+    border: 3px solid #e49c00;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+.form__surname {
+    margin-right: 15px;
+}
+.form__surname label {
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.form__surname input {
+    border: 3px solid #e49c00;
+    padding:  5px 10px ;
+    font-size: 15px;
+}
+.form__mail{
+    margin-top: 20px;
+}
+.form__mail label {
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px
+}
+.form__mail input {
+    border: 3px solid #e49c00;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+.form__tel {
+    margin-right: 100px;
+}
+.form__tel label{
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+   
+}
+.form__tel input {
+    border: 3px solid #e49c00;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+.form__genero {
+    margin-top: 15px;
+    margin-left: 55px;
+    margin-bottom: 10px;
+}
+.form__genero select {
+    border: 3px solid #e49c00;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+.form__genero option {
+    color: black;
+    background-color: #e49c00;
+}
+.form__newsletter {
+    margin-top: 30px;
+}
+.form__newsletter label {
+    color: black;
+    font-size: 25px;
+    font-weight: 900;
+}
+.form__txt {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.form__txt textarea {
+    border: 3px solid #e49c00;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
+.form__button input {
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: 800;
+    padding: 5px 10px;
+    background-color: #e49c00;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+    text-align: center;
+}
+.footer__titulo {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.footer__redes nav ul li {
+    padding: 10px 15px;
+    display: inline;
+    margin: 40px auto 20px auto;
+}
+.footer__redes img {
+    width: 100px;
+}
+.footer__pie img {
+    width: 200px;
+}
+.footer__pie p {
+    font-weight: 300;
+    color: white;
+    margin: 10px 80px 0% 80px;
+    text-align: center;
+    font-size: 15px;
+}
+@media (min-width: 1024px) and  (max-width: 1800px) {
+    .header__menu input{
+        display: none;
+    }
+    .header__menu label{
+        display: none;
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 1023px){
+
+    #body{
+        background-image: none;
+    }
+    .header__seach input{
+        display: none;
+    }
+    .header__banner nav a img {
+        width: 350px;
+    }
+    .header__menu nav ul li{
+        font-size: 15px;
+    }
+    .header__menu input{
+        display: none;
+    }
+    .header__menu label{
+        display: none;
+    }
+    .main{
+        background-image: none;
+        margin-top: 50px;
+        
+    }
+    .section__contacto{
+        width: 100%;
+    }
+    .section__contacto  h1{
+        font-size: 55px;
+    }
+    .form{
+        width: 500px;
+    }
+    .form fieldset {
+        border: 2px solid #e49c00;
+    }
+    .form fieldset legend{
+        font-size: 20px;
+    }
+    .form__name label {
+        font-size: 20px;
+    }
+    .form__name input {
+        border: 2px solid #e49c00;
+        font-size: 13px;
+    }
+    .form__surname label {
+        font-size: 20px;
+    }
+    .form__surname input {
+        border: 2px solid #e49c00;
+        font-size: 13px;
+    }
+    .form__mail label {
+        font-size: 20px;
+    }
+    .form__mail input {
+        border: 2px solid #e49c00;
+        font-size: 13px;
+    }
+    .form__tel{
+        margin-left: 18px;
+    }
+    .form__tel label{
+        font-size: 20px;
+    }
+    .form__tel input {
+        border: 2px solid #e49c00;
+        font-size: 13px;
+    }
+    .form__genero select {
+        border: 2px solid #e49c00;
+        font-size: 13px;
+    }
+    .form__genero option {
+        color: black;
+        background-color: #e49c00;
+    }
+    .form__newsletter label {
+        font-size: 20px;
+    }
+    .form__txt textarea {
+        border: 2px solid #e49c00;
+        color: black;
+        font-size: 13px;
+    }
+    .form__button input {
+        font-size: 20px;
+    }
+}
+@media (min-width: 600px) and (max-width: 767px){
+
+    #body{
+        background-image: none;
+    }
+    .header__menu input{
+        display: none;
+    }
+    .header__menu label{
+        display: none;
+    }
+    .header__seach input{
+       display: none;
+    }
+    .header__seach img{
+        width: 30px;
+    }
+    .header__banner nav a img {
+        width: 300px;
+    }
+    .header__menu nav ul li{
+        font-size: 15px;
+    }
+    .main{
+        background-image: none;
+        margin-top: 50px;
+    }
+    .section__contacto{
+        width: 100%;
+    }
+    .section__contacto  h1{
+        font-size: 45px;
+    }
+    .form{
+        width: 500px;
+    }
+    .form fieldset {
+        border: 2px solid #e49c00;
+    }
+    .form fieldset legend{
+        font-size: 20px;
+    }
+    .form__name label {
+        font-size: 20px;
+    }
+    .form__name input {
+        border: 2px solid #e49c00;
+        font-size: 13px;
+    }
+    .form__surname label {
+        font-size: 20px;
+    }
+    .form__surname input {
+        border: 2px solid #e49c00;
+        font-size: 13px;
+    }
+    .form__mail label {
+        font-size: 20px;
+    }
+    .form__mail input {
+        border: 2px solid #e49c00;
+        font-size: 13px;
+    }
+    .form__tel{
+        margin-left: 18px;
+    }
+    .form__tel label{
+        font-size: 20px;
+    }
+    .form__tel input {
+        border: 2px solid #e49c00;
+        font-size: 13px;
+    }
+    .form__genero select {
+        border: 2px solid #e49c00;
+        font-size: 13px;
+    }
+    .form__genero option {
+        color: black;
+        background-color: #e49c00;
+    }
+    .form__newsletter label {
+        font-size: 20px;
+    }
+    .form__txt textarea {
+        border: 2px solid #e49c00;
+        color: black;
+        font-size: 13px;
+    }
+    .form__button input {
+        font-size: 20px;
+    }
+    .footer__redes img{
+        width: 80px;
+    }
+    .footer__pie  img{
+        width: 200px;
+    }
+}
+@media (min-width: 480px) and (max-width: 599px){
+
+    #body{
+        background-image: none;
+    }
+    .header__menu input{
+        display: none;
+    }
+    .header__menu label{
+        display: none;
+    }
+    .header__seach input{
+        display: none;
+    }
+    .header__seach img{
+        width: 30px;
+    }
+    .header__banner nav a img {
+        width: 300px;
+    }
+    .header__menu nav ul li{
+        font-size: 12px;
+    }
+    .main{
+        background-image: none;
+        margin-top: 50px;
+    }
+    .section__contacto{
+        width: 100%;
+    }
+    .section__contacto  h1{
+        font-size: 45px;
+    }
+    .form{
+        width: 400px;
+    }
+    .form fieldset {
+        border: 2px solid #e49c00;
+    }
+    .form fieldset legend{
+        font-size: 18px;
+    }
+    .form__name label {
+        font-size: 15px;
+    }
+    .form__name input {
+        border: 2px solid #e49c00;
+        font-size: 10px;
+    }
+    .form__surname label {
+        font-size: 15px;
+    }
+    .form__surname input {
+        border: 2px solid #e49c00;
+        font-size: 10px;
+    }
+    .form__mail label {
+        font-size: 15px;
+    }
+    .form__mail input {
+        border: 2px solid #e49c00;
+        font-size: 10px;
+    }
+    .form__tel{
+        margin-left: 38px;
+    }
+    .form__tel label{
+        font-size: 15px;
+    }
+    .form__tel input {
+        border: 2px solid #e49c00;
+        font-size: 10px;
+    }
+    .form__genero{
+        margin-right: 20px;
+    }
+    .form__genero select {
+        border: 2px solid #e49c00;
+        font-size: 10px;
+    }
+    .form__genero option {
+        color: black;
+        background-color: #e49c00;
+    }
+    .form__newsletter label {
+        font-size: 15px;
+    }
+    .form__txt textarea {
+        border: 2px solid #e49c00;
+        color: black;
+        font-size: 10px;
+    }
+    .form__button input {
+        font-size: 17px;
+    }
+    .footer__titulo{
+        font-size: 20px;
+    }
+    .footer__redes img{
+        width: 50px;
+    }
+    .footer__pie  img{
+        width: 150px;
+    }
+    .footer__pie p{
+       font-size: 12px;
+    }
+}
+@media (min-width: 280px) and (max-width: 479px){
+
+    #body{
+        background-image: none;
+        background-color: black;
+    }
+    .header__menu input{
+        display: none;
+    }
+    .header__menu label{
+        display: none;
+    }
+    .header__seach input{
+        display: none;
+    }
+    .header__menu{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header__seach input{
+        display: none;
+    }
+    .header__seach img{
+        display: none;
+    }
+    .header__banner nav a img {
+        width: 300px;
+    }
+    .header__menu nav ul li{
+        font-size: 10px;
+    }
+    .main{
+        background-image: none;
+        margin-top: 50px;
+    }
+    .section__contacto{
+        width: 100%;
+    }
+    .section__contacto  h1{
+        font-size: 35px;
+    }
+    .form{
+        width: 400px;
+    }
+    .form fieldset {
+        border: 2px solid #e49c00;
+    }
+    .form fieldset legend{
+        font-size: 15px;
+    }
+    .form__name label {
+        font-size: 13px;
+    }
+    .form__name input {
+        border: 1px solid #e49c00;
+        font-size: 10px;
+    }
+    .form__surname label {
+        font-size: 13px;
+    }
+    .form__surname input {
+        border: 1px solid #e49c00;
+        font-size: 10px;
+    }
+    .form__mail label {
+        font-size: 13px;
+    }
+    .form__mail input {
+        border: 1px solid #e49c00;
+        font-size: 10px;
+    }
+    .form__tel{
+        margin-left: 45px;
+    }
+    .form__tel label{
+        font-size: 13px;
+    }
+    .form__tel input {
+        border: 1px solid #e49c00;
+        font-size: 10px;
+    }
+    .form__genero{
+        margin-right: 25px;
+    }
+    .form__genero select {
+        border: 1px solid #e49c00;
+        font-size: 10px;
+    }
+    .form__genero option {
+        color: black;
+        background-color: #e49c00;
+    }
+    .form__newsletter label {
+        font-size: 13px;
+    }
+    .form__txt textarea {
+        border: 1px solid #e49c00;
+        color: black;
+        font-size: 10px;
+    }
+    .form__button input {
+        font-size: 15px;
+    }
+    .footer__titulo{
+        font-size: 17px;
+    }
+    .footer__titulo h2{
+        display: none;
+    }
+    .footer__redes nav ul li a img{
+        display: none;
+    }
+    .footer__pie  img{
+        width: 200px;
+    }
+    .footer__pie p{
+       font-size: 10px;
+    }
+}
