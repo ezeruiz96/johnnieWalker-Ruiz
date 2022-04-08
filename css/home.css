@@ -380,8 +380,8 @@
     .footer__titulo{
         font-size: 20px;
     }
-    .footer__redes img{
-        width: 50px;
+    .footer__redes nav ul li a img{
+        width: 40px;
     }
     .footer__pie  img{
         width: 150px;
