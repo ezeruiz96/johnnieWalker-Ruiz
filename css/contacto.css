@@ -220,11 +220,13 @@
     display: inline;
     margin: 40px auto 20px auto;
 }
-.footer__redes img {
+.footer__redes nav ul li a img {
     width: 100px;
+    transition: all .5s;
+    object-fit: cover;
 }
-.footer__pie img {
-    width: 200px;
+.footer__redes nav ul li a img:hover{
+    transform: scale(1.2);
 }
 .footer__pie p {
     font-weight: 300;

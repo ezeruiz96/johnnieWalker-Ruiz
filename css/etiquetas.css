@@ -91,13 +91,18 @@
 }
 .grid__img img {
     width: 250px;
+    transition: all .5s;
+    object-fit: cover;
+}
+.grid__img img:hover{
+    transform: scale(1.05);
 }
 .grid__img p{
+    margin-top: 5px;
     font-size: 15px;
     font-weight: 800;
     text-align: center;
-    color: black; 
-    
+    color: black;
 }
 .section__table {
     width: 100%;
@@ -154,11 +159,13 @@
     display: inline;
     margin: 40px auto 20px auto;
 }
-.footer__redes img {
+.footer__redes nav ul li a img {
     width: 100px;
+    transition: all .5s;
+    object-fit: cover;
 }
-.footer__pie img {
-    width: 200px;
+.footer__redes nav ul li a img:hover{
+    transform: scale(1.2);
 }
 .footer__pie p {
     font-weight: 300;

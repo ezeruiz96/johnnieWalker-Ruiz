@@ -120,11 +120,29 @@
     align-content: center;
 
 }
+.section__etiquetasjw h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .section__etiquetasjw nav a img {
     width: 400px;
+    transition: all .5s;
+    object-fit: cover;
 } 
+.section__etiquetasjw nav a img:hover{
+    transform: scale(1.05);
+}
+.section__etiquetascl h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .section__etiquetascl img {
     width: 300px;
+    transition: all .5s;
+    object-fit: cover;
+}
+.section__etiquetascl img:hover{
+    transform: scale(1.05);
 }
 .section__beber {
     background-color: #fcf7de;
@@ -140,6 +158,11 @@
 .section__beber img {
     width: 400px;
     margin-top: 20px;
+    transition: all .5s;
+    object-fit: cover;
+}
+.section__beber img:hover{
+    transform: scale(1.05);
 }
 .section__beber p {
     font-size: 20px;
@@ -173,8 +196,13 @@
     display: inline;
     margin: 40px auto 20px auto;
 }
-.footer__redes img {
+.footer__redes nav ul li a img {
     width: 100px;
+    transition: all .5s;
+    object-fit: cover;
+}
+.footer__redes nav ul li a img:hover{
+    transform: scale(1.2);
 }
 .footer__pie img {
     width: 200px;
