@@ -325,13 +325,14 @@
        font-size: 12px;
     }
 }
-@media (min-width: 280px) and (max-width: 479px){
+@media (min-width: 250px) and (max-width: 479px){
     #body{
         background-image: none;
+        background-color: white;
     }
     
     .navbar-brand img{
-        width: 260px;
+        width: 220px;
         margin-bottom: 15px;
     }
    
@@ -340,7 +341,7 @@
         margin-top: 50px;
     }
     .section__titulo{
-        font-size: 14px;
+        font-size: 12px;
         
     }
     .section__imagen img{
@@ -380,12 +381,14 @@
         font-size: 18px;
     }
     .footer__redes nav ul li a img{
-        width: 25px;
+        width: 20px;
     }
     .footer__pie  img{
         width: 200px;
     }
     .footer__pie p{
+        text-align: center;
        font-size: 10px;
+       width: 100px;
     }
 }
