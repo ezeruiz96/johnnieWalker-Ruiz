@@ -60,45 +60,10 @@
     text-align: center;
     color: black;
 }
-.section__table {
-    width: 100%;
-    max-width: 900px;
-    margin: 50px auto;  
-    background-color: hsl(50deg 83% 93%);
-   
-    
-}
-.table th {
-    border: 5px  solid black ;
-    font-size: 30px;
-    font-weight: 700;
-    text-align: center;
-    
-    
-}
-.table__img img {
-    width: 400px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-   
-    
-}
-.table__txt {
-    border: 2px solid black;
-    
-}
-.table__txt ol li {
-    font-size: 18px;
-    font-weight: 600;
-    color: grey;
-    text-align: left;
-    list-style-type: none;
-    padding: 10px 10px;
-
-    
+.card-body{
+    background-color: hsl(50deg 83% 93%)
 }
 
-   
 .footer {
     width: 100%;
     grid-area: footer;
@@ -324,7 +289,7 @@
         width: 200px;
     }
     .grid__img p{
-        font-size: 12px;
+        font-size: 15px;
     }
     .section__table{
         width: 400px;
@@ -365,24 +330,7 @@
         color: grey;
         font-size: 10px;
     }
-    .section__table{
-        width: 350px;
-    }
-    .table th{
-        border: 2px  solid black ;
-        font-size: 14px;
-    }
-    .table__img img{
-        width: 180px;
-
-    }
-    .table__txt{
-        border: 1px solid black;
-    }
-    .table__txt ol li{
-        font-size: 10px;
-        background-color: hsl(50deg 83% 93%);
-    }
+  
     .footer__titulo{
         font-size: 17px;
     }
