@@ -857,6 +857,9 @@
     }
 }
 @media (min-width: 280px) and (max-width: 479px){
+    #body{
+        background-color: white;
+    }
 
     .header__menu{
         display:flex;
