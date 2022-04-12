@@ -17,30 +17,33 @@
 <body id="body">
    <div id="grid-area">
        <header class="header">
-          <div class="header__seach">
-              <input type="seach" placeholder="Buscar">
-              <img src="./img/seach-logo.jpg" alt="seach logo">
-          </div>
-           <div class="header__banner">
-                <nav>
-                   <a href="./index.html" >
-                  <img src="./img/johnnie-walker-men-logo.png" alt="banner logo" >
-                  </a>
-              </nav>
-          </div>  
-           <div class="header__menu">
-                <nav>
-                  <input type="checkbox" id="menu">
-                  <label for="menu"> ☰ </label>
-                   <ul>
-                       <li><a href="./index.html">Home</a></li>|
-                       <li><a href="./historia-johnnie-waker.html">La Historia de Johnnie Walker</a></li>|
-                       <li><a href="./etiquetas.html">Nuestras Etiquetas</a></li>|
-                       <li><a href="./jonh-walker-and-song-blends.html">John Walker & Sons Exclusive Blends</a></li>|
-                       <li><a href="./contacto.html">Contacto</a></li>
-                   </ul>
-              </nav>
-          </div>
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-center fixed-top bg-white">
+            <div class="container-justify-content-center mt-5">
+              <a class="navbar-brand" href="./index.html"><img src="./img/johnnie-walker-men-logo.png" alt="banner logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center mb-2 " id="navbarNav">
+                <ul class="navbar-nav fs-5">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html"><b>Home </b>|</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./historia-johnnie-waker.html"><b>La Historia de Johnnie Walker </b>|</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./etiquetas.html"><b>Nuestras Etiquetas </b>|</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./jonh-walker-and-song-blends.html"><b>John Walker & Sons Exclusive Blends </b>|</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html"><b>Contacto </b>|</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
       </header>
 
       <main class="main">
