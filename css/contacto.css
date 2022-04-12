@@ -23,52 +23,8 @@
     grid-area: header;
     background-color: white;
     text-align: center;
-    position: fixed;
-    top: 0%;
-    width: 100%;
 }
 
-.header__banner nav a img {
-    width: 500px;
-    margin: 0% auto;   
-}
-.header__seach {
-    margin-top: 20px;
-    margin-right: 50px;
-    padding: 5px;
-    text-align: right;
-}
-.header__seach img {
-    width: 45px;
-    position: absolute; 
-}
-.header__seach input {
-    width:250px ;
-    height: 30px;
-    padding: 0 10px;
-    font-weight: 600;
-    font-size: 15px;
-    color: grey;
-    border: 2px solid black;
-}
-.header__menu nav ul li { 
-    list-style-type: none;
-    font-size: 20px;
-    background-color:white;
-    display: inline-block;
-    margin: 10px auto 0% auto;
-    text-align: center;
-    padding: 2px 15px 0% 15px;
-    text-transform: uppercase;
-   
-}
-.header__menu a {
-   text-decoration: none;
-   color:black;
-   font-weight: 700;
-   display: flex;
-   justify-content: space-between;
-}
 .main{
     grid-area: main;
     text-align: center;
@@ -204,15 +160,18 @@
     background-color: #e49c00;
 }
 
+
 .footer {
+    width: 100%;
     grid-area: footer;
     background-color: black;
     text-align: center;
 }
-.footer__titulo {
+.footer__titulo h2 {
     color: white;
-    font-size: 30px;
+    font-size: 55px;
     text-align: center;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 .footer__redes nav ul li {
@@ -228,6 +187,9 @@
 .footer__redes nav ul li a img:hover{
     transform: scale(1.2);
 }
+.footer__pie img {
+    width: 200px;
+}
 .footer__pie p {
     font-weight: 300;
     color: white;
@@ -235,35 +197,12 @@
     text-align: center;
     font-size: 15px;
 }
-@media (min-width: 1024px) and  (max-width: 1800px) {
-    .header__menu input{
-        display: none;
-    }
-    .header__menu label{
-        display: none;
-    }
-    
-}
 @media (min-width: 768px) and (max-width: 1023px){
 
     #body{
         background-image: none;
     }
-    .header__seach input{
-        display: none;
-    }
-    .header__banner nav a img {
-        width: 350px;
-    }
-    .header__menu nav ul li{
-        font-size: 15px;
-    }
-    .header__menu input{
-        display: none;
-    }
-    .header__menu label{
-        display: none;
-    }
+   
     .main{
         background-image: none;
         margin-top: 50px;
@@ -334,30 +273,18 @@
     .form__button input {
         font-size: 20px;
     }
+    .footer__titulo h2{
+        margin-top: 20px;
+        font-size: 45px;
+    }
+
 }
 @media (min-width: 600px) and (max-width: 767px){
 
     #body{
         background-image: none;
     }
-    .header__menu input{
-        display: none;
-    }
-    .header__menu label{
-        display: none;
-    }
-    .header__seach input{
-       display: none;
-    }
-    .header__seach img{
-        width: 30px;
-    }
-    .header__banner nav a img {
-        width: 300px;
-    }
-    .header__menu nav ul li{
-        font-size: 15px;
-    }
+    
     .main{
         background-image: none;
         margin-top: 50px;
@@ -427,6 +354,10 @@
     .form__button input {
         font-size: 20px;
     }
+    .footer__titulo h2{
+        font-size: 40px;
+        margin-top: 20px;
+    }
     .footer__redes img{
         width: 80px;
     }
@@ -439,23 +370,8 @@
     #body{
         background-image: none;
     }
-    .header__menu input{
-        display: none;
-    }
-    .header__menu label{
-        display: none;
-    }
-    .header__seach input{
-        display: none;
-    }
-    .header__seach img{
-        width: 30px;
-    }
-    .header__banner nav a img {
-        width: 300px;
-    }
-    .header__menu nav ul li{
-        font-size: 12px;
+    .navbar-brand img{
+        width: 400px;
     }
     .main{
         background-image: none;
@@ -529,11 +445,12 @@
     .form__button input {
         font-size: 17px;
     }
-    .footer__titulo{
-        font-size: 20px;
+    .footer__titulo h2{
+        font-size: 35px;
+        margin-top: 20px;
     }
     .footer__redes nav ul li a img{
-        width: 40px;
+        width: 60px;
     }
     .footer__pie  img{
         width: 150px;
@@ -542,39 +459,15 @@
        font-size: 12px;
     }
 }
-@media (min-width: 280px) and (max-width: 479px){
+@media (min-width: 250px) and (max-width: 479px){
 
     #body{
         background-image: none;
         background-color: white;
     }
-    .header__menu input{
-        display: none;
-    }
-    .header__menu label{
-        display: none;
-    }
-    .header__seach input{
-        display: none;
-    }
-    .header__menu{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .header__seach input{
-        display: none;
-    }
-    .header__seach img{
-        display: none;
-    }
-    .header__banner nav a img {
-        width: 300px;
-    }
-    .header__menu nav ul li{
-        font-size: 10px;
+    .navbar-brand img{
+        width: 220px;
+        margin-bottom: 15px;
     }
     .main{
         background-image: none;
@@ -652,10 +545,11 @@
         font-size: 17px;
     }
     .footer__titulo h2{
-        display: none;
+        margin-top: 20px;
+        font-size: 18px;
     }
     .footer__redes nav ul li a img{
-        display: none;
+        width: 20px;
     }
     .footer__pie  img{
         width: 200px;

@@ -171,35 +171,11 @@
     text-align: center;
     font-size: 15px;
 }
-@media (min-width: 1024px) and  (max-width: 1800px) {
-    .header__menu input{
-        display: none;
-    }
-    .header__menu label{
-        display: none;
-    }
-    
-}
 
 @media (min-width: 768px) and (max-width: 1023px) {
     
     #body{
         background-image: none;
-    }
-    .header__seach input{
-        display: none;
-    }
-    .header__banner nav a img {
-        width: 350px;
-    }
-    .header__menu nav ul li{
-        font-size: 15px;
-    }
-    .header__menu input{
-        display: none;
-    }
-    .header__menu label{
-        display: none;
     }
     .main{
         background-image: none;
