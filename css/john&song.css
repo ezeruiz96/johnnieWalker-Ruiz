@@ -291,7 +291,6 @@
     margin: 0 auto 20px auto;
 }
 .container-fuid nav a img {
-    width: 450px;
     margin: 20px auto 0% auto;
     transition: all .5s;
    object-fit: cover;
