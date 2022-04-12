@@ -63,7 +63,14 @@
 .card-body{
     background-color: hsl(50deg 83% 93%)
 }
-
+.container-fuid nav a img{
+    margin: 20px auto 0% auto;
+    transition: all .5s;
+   object-fit: cover;
+}
+.container-fuid nav a img:hover{
+    transform: scale(1.05);
+}
 .footer {
     width: 100%;
     grid-area: footer;
@@ -125,23 +132,6 @@
     .grid__img p{
         font-size: 14px;
     }
-    .section__table{
-        width: 700px;
-    }
-    .table th{
-        border: 3px  solid black ;
-        font-size: 20px;
-    }
-    .table__img img{
-        width: 300px;
-
-    }
-    .table__txt{
-        border: 1px solid black;
-    }
-    .table__txt ol li{
-        font-size: 15px;
-    }
     .footer__titulo h2{
         margin-top: 20px;
         font-size: 45px;
@@ -172,27 +162,7 @@
     .grid__img p{
         font-size: 14px;
     }
-    .section__table{
-        width: 500px;
-    }
-    .table th{
-        border: 3px  solid black ;
-        font-size: 17px;
-    }
-    .table__img img{
-        width: 250px;
-
-    }
-    .table__txt{
-        border: 1px solid black;
-    }
-    .table__txt ol li{
-        font-size: 14px;
-    }
-    .section__final{
-        width: 500px;
-        font-size: 25px;
-    }
+    
     .footer__titulo h2{
         font-size: 40px;
         margin-top: 20px;
@@ -229,23 +199,6 @@
     }
     .grid__img p{
         font-size: 12px;
-    }
-    .section__table{
-        width: 400px;
-    }
-    .table th{
-        border: 2px  solid black ;
-        font-size: 15px;
-    }
-    .table__img img{
-        width: 210px;
-
-    }
-    .table__txt{
-        border: 1px solid black;
-    }
-    .table__txt ol li{
-        font-size: 14px;
     }
     .footer__titulo h2{
         font-size: 35px;
@@ -291,23 +244,7 @@
     .grid__img p{
         font-size: 15px;
     }
-    .section__table{
-        width: 400px;
-    }
-    .table th{
-        border: 2px  solid black ;
-        font-size: 15px;
-    }
-    .table__img img{
-        width: 210px;
-
-    }
-    .table__txt{
-        border: 1px solid black;
-    }
-    .table__txt ol li{
-        font-size: 14px;
-    } 
+   
     .section__titulo h1{
         font-size: 25px;
         margin-top: 50px;

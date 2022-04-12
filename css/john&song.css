@@ -290,19 +290,13 @@
     font-weight: 900;
     margin: 0 auto 20px auto;
 }
-.section__explore img {
-    width: 500px;
+.container-fuid nav a img {
     margin: 20px auto 0% auto;
     transition: all .5s;
    object-fit: cover;
 }
-.section__explore img:hover{
+.container-fuid nav a img:hover{
     transform: scale(1.05);
-}
-.section__explore h3 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 100px;
 }
 .footer {
     width: 100%;
