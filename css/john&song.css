@@ -290,12 +290,13 @@
     font-weight: 900;
     margin: 0 auto 20px auto;
 }
-.container-fuid nav a img {
+.container-sm nav a img {
+    width: 400px;
     margin: 20px auto 0% auto;
     transition: all .5s;
    object-fit: cover;
 }
-.container-fuid nav a img:hover{
+.container-sm nav a img:hover{
     transform: scale(1.05);
 }
 .footer {
