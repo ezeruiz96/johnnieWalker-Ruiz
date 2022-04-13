@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
 }
+
 #grid-area{
     width: 100%;
     display: grid;
@@ -15,6 +16,15 @@
     "main main main main"
     "footer footer footer footer";
     grid-template-rows: 100px auto ;
+}
+.nav-link {
+    font-weight: bolder;
+    transition: all .1s;
+    object-fit: cover;
+}
+.nav-link:hover{
+    transform: scale(1.02);
+    font-size: x-large;
 }
 .header{
     grid-area: header;
