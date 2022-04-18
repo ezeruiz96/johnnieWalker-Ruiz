@@ -51,10 +51,14 @@
     
 }
 .section__titulo {
-    color: black;
-    font-size: 30px;
-    font-weight: 700;
-   margin: 40px auto 10px auto ;
+    width: 100%;
+    text-align: center;
+    background-image: url(../img/banner-titulo.jpg);
+    margin: 20px auto 30px auto;
+}
+.section__titulo h1{
+    font-size: 60px;
+    font-weight: 900;
 }
 .section__imagen img {
     margin: 10px auto 20px auto;
@@ -144,7 +148,6 @@
 
 
 .footer {
-    width: 100%;
     grid-area: footer;
     background-color: black;
     text-align: center;
@@ -189,9 +192,8 @@
         background-image: none;
         margin-top: 50px;
     }
-    .section__titulo{
-        font-size: 25px;
-        margin-top: 0%;
+    .section__titulo h1{
+        font-size: 50px;
     }
     .section__imagen img{
         width: auto;
@@ -216,9 +218,10 @@
         background-image: none;
         margin-top: 50px;
     }
-    .section__titulo{
-        font-size: 20px;
+    .section__titulo h1{
+        font-size: 40px;
     }
+   
     .section__imagen img{
         width: 550px;
     }
@@ -266,8 +269,8 @@
         background-image: none;
         margin-top: 50px;
     }
-    .section__titulo{
-        font-size: 15px;
+    .section__titulo h1{
+        font-size: 35px;
     }
     .section__imagen img{
         width: 400px;
@@ -306,10 +309,10 @@
         width: 150px;
     }
     .footer__pie p{
-       font-size: 12px;
+       font-size: 15px;
     }
 }
-@media (min-width: 250px) and (max-width: 479px){
+@media (min-width: 230px) and (max-width: 479px){
     #body{
         background-image: none;
         background-color: white;
@@ -324,9 +327,8 @@
         background-image: none;
         margin-top: 50px;
     }
-    .section__titulo{
-        font-size: 12px;
-        
+    .section__titulo h1{
+        font-size: 20px;
     }
     .section__imagen img{
         width: 350px;
@@ -362,7 +364,7 @@
     }
     .footer__titulo h2{
         margin-top: 20px;
-        font-size: 18px;
+        font-size: 35px;
     }
     .footer__redes nav ul li a img{
         width: 20px;
@@ -371,6 +373,6 @@
         width: 200px;
     }
     .footer__pie p{
-       font-size: 10px;
+       font-size: 15px;
     }
 }

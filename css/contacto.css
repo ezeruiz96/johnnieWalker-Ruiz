@@ -42,14 +42,13 @@
     
    
 }
-.section__contacto{
+.section__contacto h1{
     background-image: url(../img/banner-titulo.jpg);
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
     font-size: 60px;
     font-weight: 900;
-    margin-top: 50px auto 30px auto;
 }
 .form {
     width: 700px;
@@ -171,7 +170,6 @@
 
 
 .footer {
-    width: 100%;
     grid-area: footer;
     background-color: black;
     text-align: center;
@@ -214,14 +212,11 @@
    
     .main{
         background-image: none;
-        margin-top: 50px;
+        margin-top: 100px;
         
     }
-    .section__contacto{
-        width: 100%;
-    }
     .section__contacto  h1{
-        font-size: 55px;
+        font-size: 50px;
     }
     .form{
         width: 500px;
@@ -298,11 +293,8 @@
         background-image: none;
         margin-top: 50px;
     }
-    .section__contacto{
-        width: 100%;
-    }
     .section__contacto  h1{
-        font-size: 45px;
+        font-size: 40px;
     }
     .form{
         width: 500px;
@@ -386,11 +378,9 @@
         background-image: none;
         margin-top: 50px;
     }
-    .section__contacto{
-        width: 100%;
-    }
+    
     .section__contacto  h1{
-        font-size: 45px;
+        font-size: 35px;
     }
     .form{
         width: 400px;
@@ -465,10 +455,10 @@
         width: 150px;
     }
     .footer__pie p{
-       font-size: 12px;
+       font-size: 15px;
     }
 }
-@media (min-width: 250px) and (max-width: 479px){
+@media (min-width: 230px) and (max-width: 479px){
 
     #body{
         background-image: none;
@@ -482,11 +472,9 @@
         background-image: none;
         margin-top: 50px;
     }
-    .section__contacto{
-        width: 100%;
-    }
+    
     .section__contacto  h1{
-        font-size: 35px;
+        font-size: 25px;
     }
     .form{
         width: 400px;
@@ -551,11 +539,11 @@
         font-size: 15px;
     }
     .footer__titulo{
-        font-size: 17px;
+        font-size: 19px;
     }
     .footer__titulo h2{
         margin-top: 20px;
-        font-size: 18px;
+        font-size: 35px;
     }
     .footer__redes nav ul li a img{
         width: 20px;
@@ -564,6 +552,7 @@
         width: 200px;
     }
     .footer__pie p{
-       font-size: 10px;
+       font-size: 15px;
+       
     }
 }
