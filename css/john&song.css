@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
 }
-
 #grid-area{
     width: 100%;
     display: grid;
@@ -28,7 +27,6 @@
 }
 .header{
     grid-area: header;
-    background-color: white;
     text-align: center;
 }
 
@@ -37,14 +35,13 @@
     margin-top: 100px;
 }
 .section__title {
-    text-align: center;
     width: 100%;
+    text-align: center;
     background-image: url(../img/banner-titulo.jpg);
-    margin-bottom: 50px;  
 }
-.section__title h1 {
-    margin:20px auto 0% auto;
-    font-size:60px;
+.section__title h1{
+    margin: 20px auto 5px auto;
+    font-size: 60px;
     font-weight: 900;
 }
 .section__title h4{
@@ -58,30 +55,26 @@
     max-width: 900px;
     margin: 30px auto;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
     gap: 5px;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
+}
+.grid__img img {
     text-align: center;
+    transition: all .5s;
+    object-fit: cover;
 }
-.grid__item img {
-    width: 100px;
-   margin: auto;
-   transition: all .5s;
-   object-fit: cover;
-}
-.grid__item img:hover{
+.grid__img img:hover{
     transform: scale(1.05);
 }
-.grid__item  p {
-    margin-top: 10px;
+.grid__img p{
+    margin-top: 15px;
     font-size: 15px;
     font-weight: 800;
-    color: black; 
-}
-.cards{
-    align-items: center;
+    text-align: center;
+    color: black;
 }
 .card-body{
     background-color: hsl(50deg 83% 93%);
@@ -94,38 +87,19 @@
 }
 .card-body p{
     color: grey;
-    font-size: 16px;
+    font-weight: bolder;
+    font-size: 20px;
     text-align: center;
 }
-
-.section__explore{
-    width: 100%;
-    max-width: 900px;
+.container-fuid nav a img{
     margin: 50px auto 0% auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.section__explore h2{
-    color: #e49c00;
-    width: 500px;
-    font-size: 40px;
-    font-weight: 900;
-    margin: 0 auto 20px auto;
-}
-.container-sm nav a img {
-    width: 400px;
-    margin: 20px auto 0% auto;
     transition: all .5s;
    object-fit: cover;
 }
-.container-sm nav a img:hover{
+.container-fuid nav a img:hover{
     transform: scale(1.05);
 }
 .footer {
-    width: 100%;
     grid-area: footer;
     background-color: black;
     text-align: center;
@@ -163,15 +137,9 @@
 
 @media (min-width: 768px) and (max-width: 1023px){
 
-    .main{
-        margin-top: 50px;
-    }
-    .section__title h1{
+   
+    .section__titulo h1{
         font-size: 50px;
-        margin-top: 100px;
-    }
-    .section__title h4{
-        font-size: 20px ;
     }
     .grid{
         width: 100%;
@@ -190,130 +158,22 @@
     .grid__img p{
         font-size: 14px;
     }
-    .section__articulo1{
-        width: 700px;
-    }
-    .section__articulo1 h2{
-        font-size: 25px;
-    }
-    .section__articulo1 img{
-        width: 280px;
-    }
-    .section__articulo1 p{
-        width: 600px;
-        font-size: 14px;
-    }
-    .section__articulo2{
-        width: 700px;
-    }
-    .section__articulo2 h2{
-        font-size: 25px;
-    }
-    .section__articulo2 img{
-        width: 280px;
-    }
-    .section__articulo2 p{
-        width: 600px;
-        font-size: 14px;
-    }
-    .section__articulo3{
-        width: 700px;
-    }
-    .section__articulo3 h2{
-        font-size: 25px;
-    }
-    .section__articulo3 img{
-        width: 200px;
-    }
-    .section__articulo3 p{
-        width: 600px;
-        font-size: 14px;
-    }
-    .section__articulo4{
-        width: 700px;
-    }
-    .section__articulo4 h2{
-        font-size: 25px;
-    }
-    .section__articulo4 img{
-        width: 180px;
-    }
-    .section__articulo4 p{
-        width: 600px;
-        font-size: 14px;
-    }
-    .section__articulo5{
-        width: 700px;
-    }
-    .section__articulo5 h2{
-        font-size: 25px;
-    }
-    .section__articulo5 img{
-        width: 200px;
-    }
-    .section__articulo5 p{
-        width: 600px;
-        font-size: 14px;
-    }
-    .section__articulo6{
-        width: 700px;
-    }
-    .section__articulo6 h2{
-        font-size: 25px;
-    }
-    .section__articulo6 img{
-        width: 200px;
-    }
-    .section__articulo6 p{
-        width: 600px;
-        font-size: 14px;
-    }
-    .section__articulo7{
-        width: 700px;
-    }
-    .section__articulo7 h2{
-        font-size: 25px;
-    }
-    .section__articulo7 img{
-        width: 200px;
-    }
-    .section__articulo7 p{
-        width: 600px;
-        font-size: 14px;
-    }
-    .section__explore{
-        width: 700px;
-    }
-    .section__explore h2{
-        font-size: 35px;
-    }
-    .section__explore img{
-        width: 400px;
-    }
-    .section__explore h3{
-        font-size: 18px;
-    }
     .footer__titulo h2{
         margin-top: 20px;
         font-size: 45px;
     }
+
+
 }
 @media (min-width: 600px) and (max-width: 767px){
 
-    .main{
-        margin-top: 50px;
-    }
-    .section__title h1{
+    
+    .section__titulo h1{
         font-size: 40px;
-        margin-top: 100px;
-    }
-    .section__title h4{
-        font-size: 18px;
-
     }
     .grid{
-        width: 400px;
-        max-width: 400px;
+        width: 100%;
+        max-width: 500px;
         margin: 30px auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -322,114 +182,11 @@
         justify-items: center;
         align-items: center;
     }
-    .grid__item img{
-        width: 120px;
+    .grid__img img{
+        width: 230px;
     }
-    .grid__item p{
-        font-size: 12px;
-    }
-    .section__articulo1{
-        width: 450px;
-    }
-    .section__articulo1 h2{
-        font-size: 20px;
-    }
-    .section__articulo1 img{
-        width: 250px;
-    }
-    .section__articulo1 p{
-        width: 400px;
-        font-size: 12px;
-    }
-    .section__articulo2{
-        width: 450px;
-    }
-    .section__articulo2 h2{
-        font-size: 20px;
-    }
-    .section__articulo2 img{
-        width: 250px;
-    }
-    .section__articulo2 p{
-        width: 400px;
-        font-size: 12px;
-    }
-    .section__articulo3{
-        width: 450px;
-    }
-    .section__articulo3 h2{
-        font-size: 20px;
-    }
-    .section__articulo3 img{
-        width: 170px;
-    }
-    .section__articulo3 p{
-        width: 400px;
-        font-size: 12px;
-    }
-    .section__articulo4{
-        width: 450px;
-    }
-    .section__articulo4 h2{
-        font-size: 20px;
-    }
-    .section__articulo4 img{
-        width: 150px;
-    }
-    .section__articulo4 p{
-        width: 400px;
-        font-size: 12px;
-    }
-    .section__articulo5{
-        width: 450px;
-    }
-    .section__articulo5 h2{
-        font-size: 20px;
-    }
-    .section__articulo5 img{
-        width: 170px;
-    }
-    .section__articulo5 p{
-        width: 400px;
-        font-size: 12px;
-    }
-    .section__articulo6{
-        width: 450px;
-    }
-    .section__articulo6 h2{
-        font-size: 20px;
-    }
-    .section__articulo6 img{
-        width: 170px;
-    }
-    .section__articulo6 p{
-        width: 400px;
-        font-size: 12px;
-    }
-    .section__articulo7{
-        width: 450px;
-    }
-    .section__articulo7 h2{
-        font-size: 20px;
-    }
-    .section__articulo7 img{
-        width: 170px;
-    }
-    .section__articulo7 p{
-        width: 400px;
-        font-size: 12px;
-    }
-    .section__explore{
-        width: 450px;
-    }
-    .section__explore h2{
-        font-size: 35px;
-    }
-    .section__explore img{
-        width: 300px;
-    }
-    .section__explore h3{
-        font-size: 16px;
+    .grid__img p{
+        font-size: 14px;
     }
     .footer__titulo h2{
         font-size: 40px;
@@ -447,19 +204,11 @@
     .navbar-brand img{
         width: 400px;
     }
-    .main{
-        margin-top: 50px;
-    }
-
-    .section__title h1{
-        font-size: 35px;
-    }
-    .section__title h4{
-        font-size: 18px;
-
+    .section__titulo h1{
+        font-size: 30px;
     }
     .grid{
-        width: 400px;
+        width: 100%;
         max-width: 400px;
         margin: 30px auto;
         display: grid;
@@ -472,111 +221,8 @@
     .grid__img img{
         width: 200px;
     }
-    .grid__item p{
-        font-size: 10px;
-    }
-    .section__articulo1{
-        width: 450px;
-    }
-    .section__articulo1 h2{
-        font-size: 20px;
-    }
-    .section__articulo1 img{
-        width: 250px;
-    }
-    .section__articulo1 p{
-        width: 400px;
+    .grid__img p{
         font-size: 12px;
-    }
-    .section__articulo2{
-        width: 450px;
-    }
-    .section__articulo2 h2{
-        font-size: 20px;
-    }
-    .section__articulo2 img{
-        width: 250px;
-    }
-    .section__articulo2 p{
-        width: 400px;
-        font-size: 12px;
-    }
-    .section__articulo3{
-        width: 450px;
-    }
-    .section__articulo3 h2{
-        font-size: 20px;
-    }
-    .section__articulo3 img{
-        width: 170px;
-    }
-    .section__articulo3 p{
-        width: 400px;
-        font-size: 12px;
-    }
-    .section__articulo4{
-        width: 450px;
-    }
-    .section__articulo4 h2{
-        font-size: 20px;
-    }
-    .section__articulo4 img{
-        width: 150px;
-    }
-    .section__articulo4 p{
-        width: 400px;
-        font-size: 12px;
-    }
-    .section__articulo5{
-        width: 450px;
-    }
-    .section__articulo5 h2{
-        font-size: 20px;
-    }
-    .section__articulo5 img{
-        width: 170px;
-    }
-    .section__articulo5 p{
-        width: 400px;
-        font-size: 12px;
-    }
-    .section__articulo6{
-        width: 450px;
-    }
-    .section__articulo6 h2{
-        font-size: 20px;
-    }
-    .section__articulo6 img{
-        width: 170px;
-    }
-    .section__articulo6 p{
-        width: 400px;
-        font-size: 12px;
-    }
-    .section__articulo7{
-        width: 450px;
-    }
-    .section__articulo7 h2{
-        font-size: 20px;
-    }
-    .section__articulo7 img{
-        width: 170px;
-    }
-    .section__articulo7 p{
-        width: 400px;
-        font-size: 12px;
-    }
-    .section__explore{
-        width: 450px;
-    }
-    .section__explore h2{
-        font-size: 35px;
-    }
-    .section__explore img{
-        width: 250px;
-    }
-    .section__explore h3{
-        font-size: 15px;
     }
     .footer__titulo h2{
         font-size: 35px;
@@ -592,7 +238,9 @@
        font-size: 15px;
     }
 }
-@media (min-width: 230px) and (max-width: 479px){
+
+@media (min-width: 250px) and (max-width: 479px){
+
     #body{
         background-color: white;
     }
@@ -600,140 +248,29 @@
         width: 220px;
         margin-bottom: 15px;
     }
+   .section__titulo h1{
+        font-size: 25px;
+    }
     .grid{
-        width: 400px;
-        max-width: 400px;
+        width: 100%;
+        max-width: 500px;
         margin: 30px auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        gap: 2px;
+        gap: 1px;
         justify-items: center;
         align-items: center;
     }
     .grid__img img{
         width: 200px;
     }
-    .grid__item p{
-        font-size: 12px;
-        color: grey;
-    }
-    .main{
-        width: 100%;
+    .section__titulo h1{
+        font-size: 25px;
         margin-top: 50px;
     }
-   
-    .section__title h1{
-        font-size: 20px;
-    }
-    .section__title h4{
+    .grid__img p{
         font-size: 15px;
-
-    }
-    .section__articulo1{
-        width: 400px;
-    }
-    .section__articulo1 h2{
-        font-size: 18px;
-    }
-    .section__articulo1 img{
-        width: 230px;
-    }
-    .section__articulo1 p{
-        width: 400px;
-        font-size: 10px;
-    }
-    .section__articulo2{
-        width: 400px;
-    }
-    .section__articulo2 h2{
-        font-size: 18px;
-    }
-    .section__articulo2 img{
-        width: 230px;
-    }
-    .section__articulo2 p{
-        width: 400px;
-        font-size: 10px;
-    }
-    .section__articulo3{
-        width: 400px;
-    }
-    .section__articulo3 h2{
-        font-size: 18px;
-    }
-    .section__articulo3 img{
-        width: 150px;
-    }
-    .section__articulo3 p{
-        width: 400px;
-        font-size: 10px;
-    }
-    .section__articulo4{
-        width: 400px;
-    }
-    .section__articulo4 h2{
-        font-size: 18px;
-    }
-    .section__articulo4 img{
-        width: 150px;
-    }
-    .section__articulo4 p{
-        width: 400px;
-        font-size: 10px;
-    }
-    .section__articulo5{
-        width: 400px;
-    }
-    .section__articulo5 h2{
-        font-size: 18px;
-    }
-    .section__articulo5 img{
-        width: 150px;
-    }
-    .section__articulo5 p{
-        width: 400px;
-        font-size: 10px;
-    }
-    .section__articulo6{
-        width: 400px;
-    }
-    .section__articulo6 h2{
-        font-size: 18px;
-    }
-    .section__articulo6 img{
-        width: 150px;
-    }
-    .section__articulo6 p{
-        width: 400px;
-        font-size: 10px;
-    }
-    .section__articulo7{
-        width: 400px;
-    }
-    .section__articulo7 h2{
-        font-size: 18px;
-    }
-    .section__articulo7 img{
-        width: 150px;
-    }
-    .section__articulo7 p{
-        width: 400px;
-        font-size: 10px;
-    }
-    .section__explore{
-        width: 450px;
-        text-align: center;
-    }
-    .section__explore h2{
-        font-size: 30px;
-    }
-    .section__explore img{
-        width: 250px;
-    }
-    .section__explore h3{
-        font-size: 15px;
-        color: grey;
     }
     .footer__titulo{
         font-size: 17px;
