@@ -60,7 +60,6 @@
     font-size: 60px;
     font-weight: 900;
 }
-
 .articulo__titulo h2 {
     font-size: 30px;
     font-weight: 700;
@@ -327,10 +326,7 @@
     .section__titulo h1{
         font-size: 20px;
     }
-    .section__imagen img{
-        width: 350px;
-        margin: auto;
-    }
+    
     .articulo__titulo h2{
         font-size: 25px;
     }
