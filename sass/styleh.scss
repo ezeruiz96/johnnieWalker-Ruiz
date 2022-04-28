@@ -1,6 +1,7 @@
 
 @import "vars";
 @import "reset";
+@import "mixin";
 
 #body{
     background: url(../img/fndo-1.jpg) fixed no-repeat left bottom;
@@ -22,7 +23,7 @@
         width: $widthTotal;
         display: grid;
         max-width: 1500px;
-        margin: 0 auto;
+        margin: 0% auto;
         gap: 5px;
         grid-template-areas: 
         "header header header header"
@@ -33,30 +34,73 @@
         .header{
             grid-area: header;
             text-align: center;
+            margin-bottom: 0%;
+            
+            .box{
+                display: inline-flex;
+                justify-content: end;
+                position: absolute;
+                padding-left: 290px;
+                
+               
+
+                @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                    display: none;
+                }
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    display: none;
+                }
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    display: none;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    display: none;
+                }
+                
+                input{
+                    border: 2px solid black;
+                    height: 35px;
+                    color: black;
+                    text-align: left;
+                    font-size: 15px;
+                    font-weight: bolder;
+                }
+
+               button{
+                 background-color: white;
+                   height: 35px;
+                   border: 2px solid black;
+                  
+                }
+               
+            }
 
             .navbar-brand img{
+                margin-top: 20px;
                 @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
                     width: 220px;
-                    margin-bottom: 15px;
                 }
             }
 
             .nav-link {
+                padding: 5px 15px 0% 15px;
+                margin-bottom: 0%;
+                color: black;
                 font-weight: bolder;
                 transition: all .1s;
-                object-fit: cover;
-
+ 
                 &:hover{
-                    transform: scale(1.02);
-                    font-size: x-large;
+                    color: $colorEfecto;
                 }
+                
             }
+            
         } 
         .main{
             width: $widthTotal;
             grid-area: main;
             text-align: center;
-            margin-top: 100px;
+            margin-top: 10px;
             background: url(../img/fndo-1.jpg) fixed no-repeat right bottom;
             
             @media (min-width: $desktopMin) and (max-width: $desktopMax){
@@ -83,9 +127,7 @@
                 width: $widthTotal;
                 max-width: 900px; 
                 margin: auto;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+                @include flex-colum;
 
                 &__titulo {
                     width: $widthTotal;
@@ -163,18 +205,14 @@
 
             .section__etiquetas {
                 margin: 50px auto ;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
+                @include flex-colum;
 
                 .section__etiquetasjw nav a img {
                     width: 400px;
-                    transition: all .5s;
-                    object-fit: cover;
+                    @include eft;
 
                     &:hover{
-                        transform: scale(1.05);
+                       @include eft-img;
                     }
                     @media (min-width: $tabletMin) and (max-width: $tabletMax){
                         width: 300px;
@@ -193,12 +231,13 @@
                 }
 
                 .section__etiquetascl img {
+                    @include eft;
                     width: 300px;
-                    transition: all .5s;
-                    object-fit: cover;
+                   
 
                     &:hover{
-                        transform: scale(1.05);
+                        @include eft-img;
+                        
                     }
                     @media (min-width: $tabletMin) and (max-width: $tabletMax){
                         width: 200px;
@@ -220,9 +259,7 @@
 
             .section__beber {
                 background-color: $colorFondo;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                @include flex-colum;
 
                 h2 {
                     font-size: 45px;
@@ -243,11 +280,10 @@
                 img {
                     width: 400px;
                     margin-top: 20px;
-                    transition: all .5s;
-                    object-fit: cover;
+                    @include eft;
 
                     &:hover{
-                        transform: scale(1.05);
+                        @include eft-img;
                     }
                     @media (min-width: $tabletMin) and (max-width: $tabletMax){
                         width: 300px;
@@ -318,17 +354,17 @@
             }
 
             &__redes nav ul li {
-                padding: 10px 15px;
-                display: inline;
-                margin: 40px auto 20px auto;
+                @include flex-inline;
+
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    padding: 10px;
+                }
 
                 &  a img {
-                    width: 100px;
-                    transition: all .5s;
-                    object-fit: cover;
+                    @include eft;
 
                     &:hover{
-                        transform: scale(1.2);
+                        @include eft-img;
                     }
                     @media (min-width: $tabletMin) and (max-width: $tabletMax){
                         width: 80px;
@@ -337,7 +373,7 @@
                         width: 60px;
                     }
                     @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
-                        width: 20px;
+                        width: 50px;
                     }
                 }   
             }
@@ -358,7 +394,7 @@
             }
 
             &__pie {
-                font-weight: 300;
+                font-weight: 500;
                 color: white;
                 margin: 10px 80px 0% 80px;
                 text-align: center;
