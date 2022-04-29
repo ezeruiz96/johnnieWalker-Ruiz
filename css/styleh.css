@@ -55,56 +55,6 @@
   margin-bottom: 0%;
 }
 
-#body #grid-area .header .box {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  position: absolute;
-  padding-left: 290px;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  #body #grid-area .header .box {
-    display: none;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 767px) {
-  #body #grid-area .header .box {
-    display: none;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 599px) {
-  #body #grid-area .header .box {
-    display: none;
-  }
-}
-
-@media (min-width: 230px) and (max-width: 479px) {
-  #body #grid-area .header .box {
-    display: none;
-  }
-}
-
-#body #grid-area .header .box input {
-  border: 2px solid black;
-  height: 35px;
-  color: black;
-  text-align: left;
-  font-size: 15px;
-  font-weight: bolder;
-}
-
-#body #grid-area .header .box button {
-  background-color: white;
-  height: 35px;
-  border: 2px solid black;
-}
-
 #body #grid-area .header .navbar-brand img {
   margin-top: 20px;
 }
