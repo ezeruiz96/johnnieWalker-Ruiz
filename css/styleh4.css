@@ -302,6 +302,7 @@
 
 #grid-area .main .card-body {
   background-color: #fcf7de;
+  padding: 10px;
 }
 
 #grid-area .main .card-body h5 {
@@ -309,9 +310,11 @@
   font-weight: bolder;
   font-size: 30px;
   background-image: url(../img/banner-titulo.jpg);
+  padding: 5px;
 }
 
 #grid-area .main .card-body p {
+  padding: 5px;
   color: grey;
   font-weight: bolder;
   font-size: 20px;
