@@ -122,11 +122,10 @@
 }
 
 #body #grid-area .main .form {
-  width: 700px;
+  width: 500px;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #fcf7de;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -154,532 +153,49 @@
 }
 
 #body #grid-area .main .form fieldset {
-  border: 3px solid #dc9302;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  #body #grid-area .main .form fieldset {
-    border: 2px solid #dc9302;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 767px) {
-  #body #grid-area .main .form fieldset {
-    border: 2px solid #dc9302;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 599px) {
-  #body #grid-area .main .form fieldset {
-    border: 2px solid #dc9302;
-  }
-}
-
-@media (min-width: 230px) and (max-width: 479px) {
-  #body #grid-area .main .form fieldset {
-    border: 2px solid #dc9302;
-  }
+  margin-top: 15px;
 }
 
 #body #grid-area .main .form fieldset legend {
   color: black;
   font-size: 30px;
   font-weight: 800;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  #body #grid-area .main .form fieldset legend {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 767px) {
-  #body #grid-area .main .form fieldset legend {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 599px) {
-  #body #grid-area .main .form fieldset legend {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 230px) and (max-width: 479px) {
-  #body #grid-area .main .form fieldset legend {
-    font-size: 18px;
-  }
-}
-
-#body #grid-area .main .form fieldset .form__name {
-  margin-right: 15px;
-}
-
-#body #grid-area .main .form fieldset .form__name label {
-  color: black;
-  font-size: 25px;
-  font-weight: 700;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  #body #grid-area .main .form fieldset .form__name label {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 767px) {
-  #body #grid-area .main .form fieldset .form__name label {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 599px) {
-  #body #grid-area .main .form fieldset .form__name label {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 230px) and (max-width: 479px) {
-  #body #grid-area .main .form fieldset .form__name label {
-    font-size: 15px;
-  }
-}
-
-#body #grid-area .main .form fieldset .form__name input {
-  border: 3px solid #dc9302;
-  padding: 5px 10px;
-  font-size: 15px;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  #body #grid-area .main .form fieldset .form__name input {
-    border: 2px solid #dc9302;
-    font-size: 13px;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 767px) {
-  #body #grid-area .main .form fieldset .form__name input {
-    border: 2px solid #dc9302;
-    font-size: 13px;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 599px) {
-  #body #grid-area .main .form fieldset .form__name input {
-    border: 2px solid #dc9302;
-    font-size: 10px;
-  }
-}
-
-@media (min-width: 230px) and (max-width: 479px) {
-  #body #grid-area .main .form fieldset .form__name input {
-    border: 1px solid #dc9302;
-    font-size: 10px;
-  }
-}
-
-#body #grid-area .main .form fieldset .form__surname {
-  margin-right: 15px;
-}
-
-#body #grid-area .main .form fieldset .form__surname label {
-  color: black;
-  font-size: 25px;
-  font-weight: 700;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  #body #grid-area .main .form fieldset .form__surname label {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 767px) {
-  #body #grid-area .main .form fieldset .form__surname label {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 599px) {
-  #body #grid-area .main .form fieldset .form__surname label {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 230px) and (max-width: 479px) {
-  #body #grid-area .main .form fieldset .form__surname label {
-    font-size: 15px;
-  }
-}
-
-#body #grid-area .main .form fieldset .form__surname input {
-  border: 3px solid #dc9302;
-  padding: 5px 10px;
-  font-size: 15px;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  #body #grid-area .main .form fieldset .form__surname input {
-    border: 2px solid #dc9302;
-    font-size: 13px;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 767px) {
-  #body #grid-area .main .form fieldset .form__surname input {
-    border: 2px solid #dc9302;
-    font-size: 13px;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 599px) {
-  #body #grid-area .main .form fieldset .form__surname input {
-    border: 2px solid #dc9302;
-    font-size: 10px;
-  }
-}
-
-@media (min-width: 230px) and (max-width: 479px) {
-  #body #grid-area .main .form fieldset .form__surname input {
-    border: 1px solid #dc9302;
-    font-size: 10px;
-  }
-}
-
-#body #grid-area .main .form fieldset .form__mail {
   margin-top: 20px;
-}
-
-#body #grid-area .main .form fieldset .form__mail label {
-  color: black;
-  font-size: 25px;
-  font-weight: 700;
-  margin: 30px 0 20px 0;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  #body #grid-area .main .form fieldset .form__mail label {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 767px) {
-  #body #grid-area .main .form fieldset .form__mail label {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 599px) {
-  #body #grid-area .main .form fieldset .form__mail label {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 230px) and (max-width: 479px) {
-  #body #grid-area .main .form fieldset .form__mail label {
-    font-size: 15px;
-  }
-}
-
-#body #grid-area .main .form fieldset .form__mail input {
-  border: 3px solid #dc9302;
-  padding: 5px 10px;
-  font-size: 15px;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  #body #grid-area .main .form fieldset .form__mail input {
-    border: 2px solid #dc9302;
-    font-size: 13px;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 767px) {
-  #body #grid-area .main .form fieldset .form__mail input {
-    border: 2px solid #dc9302;
-    font-size: 13px;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 599px) {
-  #body #grid-area .main .form fieldset .form__mail input {
-    border: 2px solid #dc9302;
-    font-size: 10px;
-  }
-}
-
-@media (min-width: 230px) and (max-width: 479px) {
-  #body #grid-area .main .form fieldset .form__mail input {
-    border: 1px solid #dc9302;
-    font-size: 10px;
-  }
-}
-
-#body #grid-area .main .form fieldset .form__tel {
-  margin-right: 100px;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  #body #grid-area .main .form fieldset .form__tel {
-    margin-left: 18px;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 767px) {
-  #body #grid-area .main .form fieldset .form__tel {
-    margin-left: 18px;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 599px) {
-  #body #grid-area .main .form fieldset .form__tel {
-    margin-left: 38px;
-  }
-}
-
-@media (min-width: 230px) and (max-width: 479px) {
-  #body #grid-area .main .form fieldset .form__tel {
-    margin-left: 45px;
-  }
-}
-
-#body #grid-area .main .form fieldset .form__tel label {
-  color: black;
-  font-size: 25px;
-  font-weight: 700;
-  margin-top: 30px;
   margin-bottom: 20px;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  #body #grid-area .main .form fieldset .form__tel label {
+  #body #grid-area .main .form fieldset legend {
     font-size: 20px;
   }
 }
 
 @media (min-width: 600px) and (max-width: 767px) {
-  #body #grid-area .main .form fieldset .form__tel label {
+  #body #grid-area .main .form fieldset legend {
     font-size: 20px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 599px) {
-  #body #grid-area .main .form fieldset .form__tel label {
+  #body #grid-area .main .form fieldset legend {
     font-size: 18px;
   }
 }
 
 @media (min-width: 230px) and (max-width: 479px) {
-  #body #grid-area .main .form fieldset .form__tel label {
-    font-size: 15px;
-  }
-}
-
-#body #grid-area .main .form fieldset .form__tel input {
-  border: 3px solid #dc9302;
-  padding: 5px 10px;
-  font-size: 15px;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  #body #grid-area .main .form fieldset .form__tel input {
-    border: 2px solid #dc9302;
-    font-size: 13px;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 767px) {
-  #body #grid-area .main .form fieldset .form__tel input {
-    border: 2px solid #dc9302;
-    font-size: 13px;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 599px) {
-  #body #grid-area .main .form fieldset .form__tel input {
-    border: 2px solid #dc9302;
-    font-size: 10px;
-  }
-}
-
-@media (min-width: 230px) and (max-width: 479px) {
-  #body #grid-area .main .form fieldset .form__tel input {
-    border: 1px solid #dc9302;
-    font-size: 10px;
-  }
-}
-
-#body #grid-area .main .form fieldset .form__genero {
-  margin-top: 15px;
-  margin-left: 55px;
-  margin-bottom: 10px;
-}
-
-@media (min-width: 480px) and (max-width: 599px) {
-  #body #grid-area .main .form fieldset .form__genero {
-    margin-right: 20px;
-  }
-}
-
-@media (min-width: 230px) and (max-width: 479px) {
-  #body #grid-area .main .form fieldset .form__genero {
-    margin-right: 25px;
-  }
-}
-
-#body #grid-area .main .form fieldset .form__genero select {
-  border: 3px solid #dc9302;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 5px 10px;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  #body #grid-area .main .form fieldset .form__genero select {
-    border: 2px solid #dc9302;
-    font-size: 13px;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 767px) {
-  #body #grid-area .main .form fieldset .form__genero select {
-    border: 2px solid #dc9302;
-    font-size: 13px;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 599px) {
-  #body #grid-area .main .form fieldset .form__genero select {
-    border: 2px solid #dc9302;
-    font-size: 10px;
-  }
-}
-
-@media (min-width: 230px) and (max-width: 479px) {
-  #body #grid-area .main .form fieldset .form__genero select {
-    border: 1px solid #dc9302;
-    font-size: 10px;
-  }
-}
-
-#body #grid-area .main .form fieldset .form__genero option {
-  color: black;
-  background-color: #dc9302;
-}
-
-#body #grid-area .main .form .form__newsletter {
-  margin-top: 30px;
-}
-
-#body #grid-area .main .form .form__newsletter label {
-  color: black;
-  font-size: 25px;
-  font-weight: 900;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  #body #grid-area .main .form .form__newsletter label {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 767px) {
-  #body #grid-area .main .form .form__newsletter label {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 599px) {
-  #body #grid-area .main .form .form__newsletter label {
+  #body #grid-area .main .form fieldset legend {
     font-size: 18px;
   }
 }
 
-@media (min-width: 230px) and (max-width: 479px) {
-  #body #grid-area .main .form .form__newsletter label {
-    font-size: 15px;
-  }
+#body #grid-area .main .form fieldset .form-floating {
+  border: 2px solid #dc9302;
 }
 
-#body #grid-area .main .form .form__txt {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-#body #grid-area .main .form .form__txt textarea {
-  border: 3px solid #dc9302;
+#body #grid-area .main .form .btn {
+  border: 2px solid #dc9302;
+  font-weight: bolder;
   color: black;
-  font-size: 15px;
-  font-weight: 500;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  #body #grid-area .main .form .form__txt textarea {
-    border: 2px solid #dc9302;
-    color: black;
-    font-size: 13px;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 767px) {
-  #body #grid-area .main .form .form__txt textarea {
-    border: 2px solid #dc9302;
-    color: black;
-    font-size: 13px;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 599px) {
-  #body #grid-area .main .form .form__txt textarea {
-    border: 2px solid #dc9302;
-    color: black;
-    font-size: 10px;
-  }
-}
-
-@media (min-width: 230px) and (max-width: 479px) {
-  #body #grid-area .main .form .form__txt textarea {
-    border: 1px solid #dc9302;
-    color: black;
-    font-size: 10px;
-  }
-}
-
-#body #grid-area .main .form .form__button input {
-  margin-bottom: 40px;
-  font-size: 25px;
-  font-weight: 800;
-  padding: 5px 10px;
-  background-color: #dc9302;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  #body #grid-area .main .form .form__button input {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 767px) {
-  #body #grid-area .main .form .form__button input {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 599px) {
-  #body #grid-area .main .form .form__button input {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 230px) and (max-width: 479px) {
-  #body #grid-area .main .form .form__button input {
-    font-size: 15px;
-  }
 }
 
 #body #grid-area .footer {

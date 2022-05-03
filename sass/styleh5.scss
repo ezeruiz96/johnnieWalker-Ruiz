@@ -92,11 +92,11 @@
                 }
             }
             .form {
-                width: 700px;
+                width: 500px;
                 margin-top: 50px;
                 margin-left: auto;
                 margin-right: auto;
-                background-color: $colorFondo;
+                
 
                 @media (min-width: $desktopMin) and (max-width: $desktopMax){
                     width: 500px;
@@ -112,287 +112,14 @@
                 }
 
                 fieldset {
-                    border: 3px solid $colorEfecto;
-
-                    @media (min-width: $desktopMin) and (max-width: $desktopMax){
-                        border: 2px solid $colorEfecto;
-                    }
-                    @media (min-width: $tabletMin) and (max-width: $tabletMax){
-                        border: 2px solid $colorEfecto;
-                    }
-                    @media (min-width: $mobileMin) and (max-width: $mobileMax){
-                        border: 2px solid $colorEfecto;
-                    }
-                    @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
-                        border: 2px solid $colorEfecto;
-                    }
+                   margin-top: 15px;
 
                     legend {
                         color: black;
                         font-size: 30px;
                         font-weight: 800;
-
-                        @media (min-width: $desktopMin) and (max-width: $desktopMax){
-                            font-size: 20px;
-                        }
-                        @media (min-width: $tabletMin) and (max-width: $tabletMax){
-                            font-size: 20px;
-                        }
-                        @media (min-width: $mobileMin) and (max-width: $mobileMax){
-                            font-size: 18px;
-                        }
-                        @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
-                            font-size: 18px;
-                        }
-                    }
-                    .form__name {
-                        margin-right: 15px;
-
-                        label {
-                            color: black;
-                            font-size: 25px;
-                            font-weight: 700;
-                            margin-top: 30px;
-                            margin-bottom: 20px;
-
-                            @media (min-width: $desktopMin) and (max-width: $desktopMax){
-                                font-size: 20px;
-                            }
-                            @media (min-width: $tabletMin) and (max-width: $tabletMax){
-                                font-size: 20px;
-                            }
-                            @media (min-width: $mobileMin) and (max-width: $mobileMax){
-                                font-size: 18px;
-                            }
-                            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
-                                font-size: 15px;
-                            }
-                        }
-                        input {
-                            border: 3px solid $colorEfecto;
-                            padding: 5px 10px;
-                            font-size: 15px;
-
-                            @media (min-width: $desktopMin) and (max-width: $desktopMax){
-                                border: 2px solid $colorEfecto;
-                                font-size: 13px;
-                            }
-                            @media (min-width: $tabletMin) and (max-width: $tabletMax){
-                                border: 2px solid $colorEfecto;
-                                font-size: 13px;
-                            }
-                            @media (min-width: $mobileMin) and (max-width: $mobileMax){
-                                border: 2px solid $colorEfecto;
-                                font-size: 10px;
-                            }
-                            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
-                                border: 1px solid $colorEfecto;
-                                font-size: 10px;
-                            }
-                        }
-                    }
-                    .form__surname {
-                        margin-right: 15px;
-
-                        label {
-                            color: black;
-                            font-size: 25px;
-                            font-weight: 700;
-                            margin-top: 30px;
-                            margin-bottom: 20px;
-
-                            @media (min-width: $desktopMin) and (max-width: $desktopMax){
-                                font-size: 20px;
-                            }
-                            @media (min-width: $tabletMin) and (max-width: $tabletMax){
-                                font-size: 20px;
-                            }
-                            @media (min-width: $mobileMin) and (max-width: $mobileMax){
-                                font-size: 18px;
-                            }
-                            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
-                                font-size: 15px;
-                            }
-                        }
-                        input {
-                            border: 3px solid $colorEfecto;
-                            padding:  5px 10px ;
-                            font-size: 15px;
-
-                            @media (min-width: $desktopMin) and (max-width: $desktopMax){
-                                border: 2px solid $colorEfecto;
-                                font-size: 13px;
-                            }
-                            @media (min-width: $tabletMin) and (max-width: $tabletMax){
-                                border: 2px solid $colorEfecto;
-                                font-size: 13px;
-                            }
-                            @media (min-width: $mobileMin) and (max-width: $mobileMax){
-                                border: 2px solid $colorEfecto;
-                                font-size: 10px;
-                            }
-                            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
-                                border: 1px solid $colorEfecto;
-                                font-size: 10px;
-                            }
-                        }
-                    }
-                    .form__mail{
                         margin-top: 20px;
-                        
-
-                        label{
-                            color: black;
-                            font-size: 25px;
-                            font-weight: 700;
-                            margin: 30px 0 20px 0;
-                            
-                            @media (min-width: $desktopMin) and (max-width: $desktopMax){
-                                font-size: 20px;
-                            }
-                            @media (min-width: $tabletMin) and (max-width: $tabletMax){
-                                font-size: 20px;
-                            }
-                            @media (min-width: $mobileMin) and (max-width: $mobileMax){
-                                font-size: 18px;
-                            }
-                            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
-                                font-size: 15px;
-                            }
-                           
-
-                        }
-                        input{
-                            border: 3px solid $colorEfecto;
-                            padding: 5px 10px;
-                            font-size: 15px;
-                            
-                            @media (min-width: $desktopMin) and (max-width: $desktopMax){
-                                border: 2px solid $colorEfecto;
-                                font-size: 13px;
-                            }
-                            @media (min-width: $tabletMin) and (max-width: $tabletMax){
-                                border: 2px solid $colorEfecto;
-                                font-size: 13px;
-                            }
-                            @media (min-width: $mobileMin) and (max-width: $mobileMax){
-                                border: 2px solid $colorEfecto;
-                                font-size: 10px;
-                            }
-                            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
-                                border: 1px solid $colorEfecto;
-                                font-size: 10px;
-                            }
-                        }
-                    }
-                    .form__tel {
-                        margin-right: 100px;
-
-                        @media (min-width: $desktopMin) and (max-width: $desktopMax){
-                            margin-left: 18px;
-                        }
-                        @media (min-width: $tabletMin) and (max-width: $tabletMax){
-                            margin-left: 18px;
-                        }
-                        @media (min-width: $mobileMin) and (max-width: $mobileMax){
-                            margin-left: 38px;
-                        }
-                        @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
-                            margin-left: 45px;
-                        }
-                        
-
-                        label{
-                            color: black;
-                            font-size: 25px;
-                            font-weight: 700;
-                            margin-top: 30px;
-                            margin-bottom: 20px;
-
-                            @media (min-width: $desktopMin) and (max-width: $desktopMax){
-                                font-size: 20px;
-                            }
-                            @media (min-width: $tabletMin) and (max-width: $tabletMax){
-                                font-size: 20px;
-                            }
-                            @media (min-width: $mobileMin) and (max-width: $mobileMax){
-                                font-size: 18px;
-                            }
-                            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
-                                font-size: 15px;
-                            }
-                        }
-                        input {
-                            border: 3px solid $colorEfecto;
-                            padding: 5px 10px;
-                            font-size: 15px;
-
-                            @media (min-width: $desktopMin) and (max-width: $desktopMax){
-                                border: 2px solid $colorEfecto;
-                                font-size: 13px;
-                            }
-                            @media (min-width: $tabletMin) and (max-width: $tabletMax){
-                                border: 2px solid $colorEfecto;
-                                font-size: 13px;
-                            }
-                            @media (min-width: $mobileMin) and (max-width: $mobileMax){
-                                border: 2px solid $colorEfecto;
-                                font-size: 10px;
-                            }
-                            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
-                                border: 1px solid $colorEfecto;
-                                font-size: 10px;
-                            }
-                        }
-                    }
-                    .form__genero {
-                        margin-top: 15px;
-                        margin-left: 55px;
-                        margin-bottom: 10px;
-                        
-                        @media (min-width: $mobileMin) and (max-width: $mobileMax){
-                            margin-right: 20px;
-                        }
-                        @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
-                            margin-right: 25px;
-                        }
-
-                        select {
-                            border: 3px solid $colorEfecto;
-                            font-size: 15px;
-                            font-weight: 500;
-                            padding: 5px 10px;
-
-                            @media (min-width: $desktopMin) and (max-width: $desktopMax){
-                                border: 2px solid $colorEfecto;
-                                font-size: 13px;
-                            }
-                            @media (min-width: $tabletMin) and (max-width: $tabletMax){
-                                border: 2px solid $colorEfecto;
-                                font-size: 13px;
-                            }
-                            @media (min-width: $mobileMin) and (max-width: $mobileMax){
-                                border: 2px solid $colorEfecto;
-                                font-size: 10px;
-                            }
-                            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
-                                border: 1px solid $colorEfecto;
-                                font-size: 10px;
-                            }
-                        }
-                        option {
-                            color: black;
-                            background-color:$colorEfecto;
-                        }
-                    } 
-                }
-                .form__newsletter {
-                    margin-top: 30px;
-
-                    label {
-                        color: black;
-                        font-size: 25px;
-                        font-weight: 900;
+                        margin-bottom: 20px;
 
                         @media (min-width: $desktopMin) and (max-width: $desktopMax){
                             font-size: 20px;
@@ -404,66 +131,20 @@
                             font-size: 18px;
                         }
                         @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
-                            font-size: 15px;
-                        }
-                    }
-                }
-                .form__txt {
-                    margin-top: 20px;
-                    margin-bottom: 10px;
-
-                    textarea {
-                        border: 3px solid $colorEfecto;
-                        color: black;
-                        font-size: 15px;
-                        font-weight: 500;
-
-                        @media (min-width: $desktopMin) and (max-width: $desktopMax){
-                            border: 2px solid $colorEfecto;
-                            color: black;
-                            font-size: 13px;
-                        }
-                        @media (min-width: $tabletMin) and (max-width: $tabletMax){
-                            border: 2px solid $colorEfecto;
-                            color: black;
-                            font-size: 13px;
-                        }
-                        @media (min-width: $mobileMin) and (max-width: $mobileMax){
-                            border: 2px solid $colorEfecto;
-                            color: black;
-                            font-size: 10px;
-                        }
-                        @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
-                            border: 1px solid $colorEfecto;
-                            color: black;
-                            font-size: 10px;
-                        }
-                    }
-                }
-                .form__button{
-
-                    input {
-                        margin-bottom: 40px;
-                        font-size: 25px;
-                        font-weight: 800;
-                        padding: 5px 10px;
-                        background-color: $colorEfecto;
-
-                        @media (min-width: $desktopMin) and (max-width: $desktopMax){
-                            font-size: 20px;
-                        }
-                        @media (min-width: $tabletMin) and (max-width: $tabletMax){
-                            font-size: 20px;
-                        }
-                        @media (min-width: $mobileMin) and (max-width: $mobileMax){
                             font-size: 18px;
                         }
-                        @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
-                            font-size: 15px;
-                        }
                     }
-                }
+                    .form-floating{
+                        border: 2px solid $colorEfecto;
+                    }
+                } 
+                .btn{
+                    border:2px solid $colorEfecto;
+                    font-weight: bolder;
+                    color: black;
+                }   
             }
+
         }
         .footer {
             grid-area: footer;

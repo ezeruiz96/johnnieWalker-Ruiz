@@ -56,43 +56,47 @@
               <form action="enviar.php" method="get" enctype="text/plain">
                   <fieldset>
                      <legend>DATOS PERSONALES</legend>
-                      <div class="form__name">
-                         <label for="name">Nombre:</label>
-                         <input type="nombre:" id="name" placeholder="Ingrese su nombre">
+                     <div class="form-floating mb-3 " >
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name">
+                        <label for="floatingInput"><b>Nombre</b></label>
                       </div>
-                      <div class="form__surname">
-                          <label for="last-name">Apellido:</label>
-                          <input type="apellido:" id="last-name" placeholder="Ingrese su apellido">
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="surname">
+                        <label for="floatingInput"><b>Apellido</b></label>
                       </div>
-                      <div class="form__mail">
-                          <label for="mail">E-mail:</label>
-                          <input type="E-mail:" id="mail" placeholder="Ingrese su E-mail" required >
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput"><b>Email</b></label>
                       </div>
-                      <div class="form__tel">
-                          <label for="telefono"><strong>Telefono</strong>(opcional):</label>
-                          <input type="Telefono(opcional):" id="telefono" placeholder="Ingrese su Telefono">
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="ubicacion">
+                        <label for="floatingInput"><b>Ubicacion de Recidencia</b></label>
                       </div>
-                      <div class="form__genero">
-                          <select name="genero" id="genero">
-                              <option value="0">Seleccione su Genero</option>
-                              <option value="1">Masculino</option>
-                              <option value="2">Femenino</option>
-                              <option value="3">Otros</option>
-                          </select>
+                      <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected><b>Genero</b></option>
+                          <option value="1">Masculino</option>
+                          <option value="2">Femenino</option>
+                          <option value="3">Otros</option>
+                        </select>
+                        <label for="floatingSelect"><b>Seleccione su</b></label>
                       </div>
                   </fieldset>
-                  <div class="form__newsletter">
-                      <label for="newsletter">¿Desea recibier el Newsletter?</label>
+                  <div class="form__newsletter mt-3">
+                      <label for="newsletter"><b>¿Desea recibier el Newsletter?</b></label>
                       <input type="checkbox" id="newsletter" value="1">
                   </div>
-                  <div class="form__txt">
-                      <label for="multi"></label>
-                      <textarea name="Su-consulta" id="multi" cols="60" rows="10" placeholder="Su consulta..."></textarea>
-                   </div>
-                   <div class="form__button">
-                       <input type="submit" value="Enviar">
-                       <input type="reset" value="Borrar todo">
-                   </div>
+                  <Fieldset>
+                      <legend>Su consulta</legend>
+                       <div class="form-floating">
+                         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="border: 2px solid #dc9302; height: 200px" ></textarea>
+                         <label for="floatingTextarea2"></label>
+                        </div>
+                    </Fieldset>
+                    <div class="form__button mt-3">
+                        <button type="submit" class="btn">ENVIAR</button>
+                        <button type="reset" class="btn">BORRAR TODO</button>
+                       </div>
               </form>
           </div>
        </main>
