@@ -118,7 +118,6 @@
 }
 
 #body #grid-area .main .section {
-  width: 100%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,7 +139,7 @@
   text-align: center;
   padding: 30px;
   background-image: url(../img/banner-titulo.jpg);
-  margin: 20px auto 30px auto;
+  margin: 20px auto 0% auto;
 }
 
 #body #grid-area .main .section__titulo h1 {
@@ -171,6 +170,11 @@
   #body #grid-area .main .section__titulo h1 {
     font-size: 20px;
   }
+}
+
+#body #grid-area .main .section #carouselExampleIndicators {
+  margin-top: 10px;
+  max-width: 1000px;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {

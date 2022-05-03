@@ -65,6 +65,8 @@
             margin-top: 10px;
             background: url(../img/fndo-1.jpg) fixed no-repeat right bottom;
             
+           
+            
             @media (min-width: $desktopMin) and (max-width: $desktopMax){
                 background-image: $bgImg;
                 margin-top: 50px;
@@ -86,7 +88,6 @@
             }
 
             .section {
-                width: $widthTotal;
                 margin: auto;
                 @include flex-colum;
 
@@ -95,7 +96,7 @@
                     text-align: center;
                     padding: 30px;
                     background-image: $bgFondo;
-                    margin: 20px auto 30px auto;
+                    margin: 20px auto 0% auto;
 
                  h1 {
                     font-size: 60px;
@@ -117,6 +118,13 @@
                   }
 
                 }
+                #carouselExampleIndicators{
+                    margin-top: 10px;
+                    max-width: 1000px;
+                    
+    
+                }
+    
 
             }
 
@@ -169,6 +177,9 @@
             .section__etiquetas {
                 margin: 50px auto ;
                 @include flex-colum;
+               
+                
+            
 
                 .section__etiquetasjw nav a img {
                     width: 400px;
