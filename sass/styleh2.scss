@@ -1,0 +1,746 @@
+
+@import "vars";
+@import "reset";
+@import "mixin";
+
+
+#grid-area{
+    width: $widthTotal;
+    display: grid;
+    max-width: 1500px;
+    margin: 0% auto;
+    gap: 5px;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+    grid-template-rows: 100px auto ;
+
+    .header{
+        grid-area: header;
+        text-align: center;
+        margin-bottom: 0%;
+
+        .navbar-brand img{
+            margin-top: 20px;
+            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                width: 220px;
+            }
+        }
+        .nav-link {
+            padding: 5px 15px 0% 15px;
+            margin-bottom: 0%;
+            color: black;
+            font-weight: bolder;
+            transition: all .1s;
+
+            &:hover{
+                color: $colorEfecto;
+            }
+            
+        }
+
+    }
+    .main{
+        width: $widthTotal;
+        grid-area: main;
+        text-align: center;
+        margin-top: 10px;
+
+        @media (min-width: $desktopMin) and (max-width: $desktopMax){
+            margin-top: 50px;
+        }
+
+        @media (min-width: $tabletMin) and (max-width: $tabletMax){
+            margin-top: 50px;
+        }
+
+        @media (min-width: $mobileMin) and (max-width: $mobileMax){
+            margin-top: 50px;
+        }
+
+        @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+            margin-top: 50px;
+        }
+       
+        .section__titulo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1{
+                margin: 20px auto 30px auto;
+                font-size: 60px;
+                font-weight: bold; 
+                color:black;
+                padding: 30px;
+                width: $widthTotal;
+                background-image: $bgFondo;
+
+                @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                    font-size: 50px;
+                }
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    font-size: 40px;
+                }
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    font-size: 35px;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    font-size: 25px;
+                }
+            }
+            h3{
+                margin: 20px auto 10px auto ;
+                font-size: 20px;
+                color: grey;
+                font-weight: 700;
+                width: 350px;
+
+                @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                    font-size: 18px;
+                }
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    font-size: 16px;
+                }
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    font-size: 15px;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    width: 320px;
+                    font-size: 14px;
+                }
+            }
+            img{
+                width: 400px;
+                margin-top: 20px;
+
+                @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                    width: 310px;
+                }
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    width: 300px;
+                }
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    width: 300px;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    width: 250px;
+                }
+            }
+            p{
+                width: 500px;
+                font-size: 20px;
+                color: grey;
+                font-weight: 700;
+                margin: 10px auto 10px auto;
+
+                @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                    font-size: 18px;
+                }
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    font-size: 17px;
+                }
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    width: 400px;
+                    font-size: 15px;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    width: 320px;
+                    font-size: 15px;
+                }
+            }
+        }
+        .section__historia{
+            background-color: $colorFondo;
+            padding: 0;
+            margin: 0%;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            max-width: 900px;
+
+            @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                width: 320px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            img{
+                width: 400px;
+                float: left;
+                margin-top: 50px;
+                margin-left: 30px;
+
+                @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                    width: 400px;
+                }
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    width: 380px;
+                }
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    width: 360px;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    width: 280px;
+                }
+            }
+            p{
+                width: 400px;
+                font-size: 20px;
+                color: grey;
+                font-weight: 700;
+                display: inline-block;
+                padding: 10px 5px; 
+
+                @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                    font-size: 18px;
+                }
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    font-size: 17px;
+                }
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    font-size: 15px;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    width: 320px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .section__historia2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                width: 1200px;
+                margin-top: 100px;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                max-width: 900px;
+
+                @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                    width: 550px;
+                }
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    width: 500px;
+                }
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    width: 400px;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    width: 300px;
+                }
+            }
+            p{
+                width: 700px;
+                font-size: 20px;
+                font-weight: 700;
+                text-align: center;
+                color: grey;
+                margin: 40px auto 20px auto;
+
+                @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                    width: 500px;
+                    font-size: 18px;
+                }
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    width: 500px;
+                    font-size: 17px;
+                }
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    width: 400px;
+                    font-size: 15px;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    width: 320px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .section__historia3 {
+            background-color: $colorFondo;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+
+            @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                width: 500px;
+            }
+            @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                width: 500px;
+            }
+            @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                width: 400px;
+            }
+            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                width: 320px;
+            }
+
+            img{
+                width: 300px;
+                margin: 50px auto 20px auto;
+
+                @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                    width: 350px;
+                }
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    width: 300px;
+                }
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    width: 200px;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    width: 200px;
+                }
+            }
+            p{
+                width: 900px;
+                font-size: 20px;
+                font-weight: 700;
+                color: grey;
+                text-align: center;
+                margin: 0% auto 20px auto;
+                padding: 10px 5px;
+
+                @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                    width: 500px;
+                    font-size: 18px;
+                }
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    width: 500px;
+                    font-size: 17px;
+                }
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    width: 400px;
+                    font-size: 15px;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    width: 320px;
+                    font-size: 14px;
+                }
+            }
+        }
+        
+        .section__historia4 {
+            padding: 0;
+            margin: 0%;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            max-width: 900px;
+
+            @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                width: 320px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            img {
+                width: 400px;
+                margin-top: 40px;
+                float: right;
+                margin-bottom: 150px;
+                margin-right: 10px;
+                margin-left: 20px;
+
+                @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                    width: 350px;
+                    margin-bottom: 0%;
+                }
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    width: 320px;
+                    margin-bottom: 0%;
+                }
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    width: 290px;
+                    margin-bottom: 0%;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    width: 260px;
+                }
+            }
+            p {
+                width: 400px;
+                font-size: 20px;
+                font-weight: 700; 
+                color: grey;
+                text-align: center;
+                display: inline-block;
+                padding: 10px;
+                margin-top: 20px;
+
+                @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                    width: 500px;
+                    font-size: 18px;
+                }
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    width: 500px;
+                    font-size: 17px;
+                }
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    width: 400px;
+                    font-size: 15px;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    width: 320px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .section__historia5 {
+            background-color: $colorFondo;
+            padding: 0;
+            margin: 0%;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            max-width: 900px;
+
+            @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                width: 320px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            img {
+                width: 400px;
+                float: left;
+                margin-top: 70px;
+                margin-left: 10px;
+                
+                @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                    width: 350px;
+                }
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    width: 320px;
+                }
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    width: 300px;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    width: 260px;
+                }
+            }
+            p {
+                width: 400px;
+                font-size: 20px;
+                font-weight: 700;
+                color: grey;
+                text-align: center;
+                display: inline-block;
+                margin-top: 30px;
+                margin-bottom: 30px;
+
+                @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                    width: 500px;
+                    font-size: 18px;
+                }
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    width: 500px;
+                    font-size: 17px;
+                }
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    width: 400px;
+                    font-size: 15px;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    width: 320px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .section__historia6 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 50px;
+
+            @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 50px auto;
+            }
+            @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 50px auto;
+            }
+            @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 50px auto;
+            }
+            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                width: 320px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 50px auto;
+            }
+            
+            img {
+                width: 450px;
+                margin-right: 20px;
+
+                @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                    width: 350px;
+                    font-size: 20px;
+                }
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    width: 320px;
+                    margin-bottom: 20px;
+                }
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    width: 300px;
+                    margin-bottom: 20px;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    width: 260px;
+                    margin-bottom: 20px;
+                }
+            }
+            p {
+                width: 400px;
+                font-size: 20px;
+                font-weight: 700;
+                color: grey;
+                
+                @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                    width: 500px;
+                    font-size: 18px;
+                }
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    width: 500px;
+                    font-size: 17px;
+                }
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    width: 400px;
+                    font-size: 15px;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    width: 320px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .section__historia7 {
+            width: 700px;
+            font-size: 20px;
+            font-weight: 700;
+            color: grey;
+            margin: 150px auto 100px auto;
+
+            @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                width: 500px;
+                font-size: 18px;
+            }
+            @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                width: 500px;
+                font-size: 17px;
+            }
+            @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                width: 400px;
+                font-size: 15px;
+            }
+            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                width: 320px;
+                font-size: 14px;
+            }
+        }
+        .section__final {
+            color: $colorSecundario;
+            width: 500px;
+            font-size: 35px;
+            font-weight: 900;
+            text-align: center;
+            margin: 50px auto 20px auto;
+
+            @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                width: 500px;
+                font-size: 30px;
+            }
+            @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                width: 500px;
+                font-size: 25px;
+            }
+            @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                width: 400px;
+                font-size: 20px;
+            }
+            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                width: 350px;
+                font-size: 20px;
+            }
+        }
+    }
+    .footer {
+        grid-area: footer;
+        background-color: $bgFooter;
+        text-align: center;
+
+        &__titulo h2 {
+            color: white;
+            font-size: 55px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 50px;
+
+            @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                font-size: 40px;
+                margin-top: 20px;
+            }
+            @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                font-size: $fontMedium;
+                margin-top: 20px;
+            }
+            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                font-size: $fontMedium;
+                margin-top: 20px;
+            }
+        }
+        &__redes nav ul li {
+            @include flex-inline;
+
+            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                padding: 10px;
+            }
+
+            &  a img {
+                @include eft;
+
+                &:hover{
+                    @include eft-img;
+                }
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    width: 80px;
+                }
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    width: 60px;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    width: 50px;
+                }
+            }   
+        }
+        &__pie img {
+            width: 200px;
+
+            @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                width: 200px;
+            }
+            @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                width: 200px;
+            }
+            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                width: 200px;
+            }
+
+        }
+        &__pie {
+            font-weight: 500;
+            color: white;
+            margin: 10px 80px 0% 80px;
+            text-align: center;
+            font-size: 17px;
+
+            @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                font-size: $fontSmall;
+            }
+            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                font-size: $fontSmall;
+            }
+        }
+ 
+    }
+}

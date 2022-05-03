@@ -87,19 +87,20 @@
 
             .section {
                 width: $widthTotal;
-                max-width: 900px; 
                 margin: auto;
                 @include flex-colum;
 
                 &__titulo {
                     width: $widthTotal;
                     text-align: center;
+                    padding: 30px;
                     background-image: $bgFondo;
                     margin: 20px auto 30px auto;
 
                  h1 {
                     font-size: 60px;
-                    font-weight: 900;
+                    font-weight: bold; 
+                    color:black;
 
                     @media (min-width: $desktopMin) and (max-width: $desktopMax){
                         font-size: 50px;

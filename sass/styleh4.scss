@@ -1,0 +1,310 @@
+
+@import "vars";
+@import "reset";
+@import "mixin";
+
+#grid-area{
+    width: 100%;
+    display: grid;
+    max-width: 1500px;
+    margin: 0 auto;
+    gap: 5px;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+    grid-template-rows: 100px auto ;
+
+    .header{
+        grid-area: header;
+        text-align: center;
+        margin-bottom: 0%;
+
+        .navbar-brand img{
+            margin-top: 20px;
+            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                width: 220px;
+            }
+        }
+        .nav-link {
+            padding: 5px 15px 0% 15px;
+            margin-bottom: 0%;
+            color: black;
+            font-weight: bolder;
+            transition: all .1s;
+
+            &:hover{
+                color: $colorEfecto;
+            }
+            
+        }
+
+    }
+    .main{
+        width: $widthTotal;
+        grid-area: main;
+        text-align: center;
+        margin-top: 10px;
+ 
+        @media (min-width: $desktopMin) and (max-width: $desktopMax){
+            margin-top: 50px;
+        }
+
+        @media (min-width: $tabletMin) and (max-width: $tabletMax){
+            margin-top: 50px;
+        }
+
+        @media (min-width: $mobileMin) and (max-width: $mobileMax){
+            margin-top: 50px;
+        }
+
+        @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+            margin-top: 50px;
+        }
+
+        .section__title {
+            width: $widthTotal;
+            text-align: center;
+            padding: 30px;
+            margin: 20px auto 5px auto;
+            background-image: url(../img/banner-titulo.jpg);
+
+            h1{
+                font-size: 60px;
+                font-weight: bold; 
+                color:black;
+
+                @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                    font-size: 50px;
+                }
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    font-size: 40px;
+                }
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    font-size: 30px;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    font-size: 25px;
+                    margin-top: 50px;
+                }
+            }
+            h4{
+                padding: 5px 5px;
+                font-size: 20px;
+                font-weight: 700;
+                margin: auto;
+
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    font-size: 16px;
+                }
+            }
+        }
+        .grid {
+            width: 100%;
+            max-width: 900px;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr ;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+
+            @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                width: 100%;
+                max-width: 600px;
+                margin: 30px auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                gap: 5px;
+                justify-items: center;
+                align-items: center;
+            }
+            @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                width: 100%;
+                max-width: 500px;
+                margin: 30px auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                gap: 5px;
+                justify-items: center;
+                align-items: center;
+            }
+            @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                width: 100%;
+                max-width: 500px;
+                margin: 30px auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                gap: 5px;
+                justify-items: center;
+                align-items: center;
+            }
+            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                width: 100%;
+                max-width: 500px;
+                margin: 30px auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                gap: 5px;
+                justify-items: center;
+                align-items: center;
+            }
+    
+            .grid__img{
+    
+                img{
+                    text-align: center;
+                    transition: all .5s;
+                    object-fit: cover;
+
+                    @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                        width: 250px;
+                    }
+                    @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                        width: 230px;
+                    }
+                    @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                        width: 200px;
+                    }
+                    @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                        width: 200px;
+                    }
+    
+                    &:hover{
+                        transform: scale(1.05);
+                    }
+                }
+                p{
+                    margin-top: 15px;
+                    font-size: 15px;
+                    font-weight: 800;
+                    text-align: center;
+                    color: black;
+
+                    @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                        font-size: 15px;
+                    }
+                    @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                        font-size: 15px;
+                    }
+                    @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                        font-size: 15px;
+                    }
+                    @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                        font-size: 15px;
+                    }
+                }
+            }
+           
+        }
+        .card-body{
+            background-color: $colorFondo;
+    
+            h5{
+                text-align: center;
+                font-weight: bolder;
+                font-size: 30px;
+                background-image: url(../img/banner-titulo.jpg);
+            }
+            p{
+                color: grey;
+                font-weight: bolder;
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+        .container-fuid nav a img{
+            margin: 50px auto 0% auto;
+            transition: all .5s;
+           object-fit: cover;
+    
+           &:hover{
+            transform: scale(1.05);
+           }
+        }
+    }
+    .footer {
+        grid-area: footer;
+        background-color: $bgFooter;
+        text-align: center;
+
+        &__titulo h2 {
+            color: white;
+            font-size: 55px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 50px;
+
+            @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                font-size: 40px;
+                margin-top: 20px;
+            }
+            @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                font-size: $fontMedium;
+                margin-top: 20px;
+            }
+            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                font-size: $fontMedium;
+                margin-top: 20px;
+            }
+        }
+        &__redes nav ul li {
+            @include flex-inline;
+
+            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                padding: 10px;
+            }
+
+            &  a img {
+                @include eft;
+
+                &:hover{
+                    @include eft-img;
+                }
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    width: 80px;
+                }
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    width: 60px;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    width: 50px;
+                }
+            }   
+        }
+        &__pie img {
+            width: 200px;
+
+            @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                width: 200px;
+            }
+            @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                width: 200px;
+            }
+            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                width: 200px;
+            }
+
+        }
+        &__pie {
+            font-weight: 500;
+            color: white;
+            margin: 10px 80px 0% 80px;
+            text-align: center;
+            font-size: 17px;
+
+            @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                font-size: $fontSmall;
+            }
+            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                font-size: $fontSmall;
+            }
+        }
+ 
+    }
+}

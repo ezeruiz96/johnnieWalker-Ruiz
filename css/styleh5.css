@@ -1,0 +1,812 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+#body #grid-area {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  max-width: 1500px;
+  margin: 0 auto;
+  gap: 5px;
+      grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+  -ms-grid-rows: 100px auto;
+      grid-template-rows: 100px auto;
+}
+
+#body #grid-area .header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: header;
+  text-align: center;
+  margin-bottom: 0%;
+}
+
+#body #grid-area .header .navbar-brand img {
+  margin-top: 20px;
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .header .navbar-brand img {
+    width: 220px;
+  }
+}
+
+#body #grid-area .header .nav-link {
+  padding: 5px 15px 0% 15px;
+  margin-bottom: 0%;
+  color: black;
+  font-weight: bolder;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+}
+
+#body #grid-area .header .nav-link:hover {
+  color: #dc9302;
+}
+
+#body #grid-area .main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: main;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #body #grid-area .main {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #body #grid-area .main {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .main {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .main {
+    margin-top: 50px;
+  }
+}
+
+#body #grid-area .main .section__contacto {
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  background-image: url(../img/banner-titulo.jpg);
+  margin: 20px auto 30px auto;
+}
+
+#body #grid-area .main .section__contacto h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: black;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #body #grid-area .main .section__contacto h1 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #body #grid-area .main .section__contacto h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .main .section__contacto h1 {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .main .section__contacto h1 {
+    font-size: 25px;
+  }
+}
+
+#body #grid-area .main .form {
+  width: 700px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fcf7de;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #body #grid-area .main .form {
+    width: 500px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #body #grid-area .main .form {
+    width: 500px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .main .form {
+    width: 400px;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .main .form {
+    width: 400px;
+  }
+}
+
+#body #grid-area .main .form fieldset {
+  border: 3px solid #dc9302;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #body #grid-area .main .form fieldset {
+    border: 2px solid #dc9302;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #body #grid-area .main .form fieldset {
+    border: 2px solid #dc9302;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .main .form fieldset {
+    border: 2px solid #dc9302;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .main .form fieldset {
+    border: 2px solid #dc9302;
+  }
+}
+
+#body #grid-area .main .form fieldset legend {
+  color: black;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #body #grid-area .main .form fieldset legend {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #body #grid-area .main .form fieldset legend {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .main .form fieldset legend {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .main .form fieldset legend {
+    font-size: 18px;
+  }
+}
+
+#body #grid-area .main .form fieldset .form__name {
+  margin-right: 15px;
+}
+
+#body #grid-area .main .form fieldset .form__name label {
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #body #grid-area .main .form fieldset .form__name label {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #body #grid-area .main .form fieldset .form__name label {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .main .form fieldset .form__name label {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .main .form fieldset .form__name label {
+    font-size: 15px;
+  }
+}
+
+#body #grid-area .main .form fieldset .form__name input {
+  border: 3px solid #dc9302;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #body #grid-area .main .form fieldset .form__name input {
+    border: 2px solid #dc9302;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #body #grid-area .main .form fieldset .form__name input {
+    border: 2px solid #dc9302;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .main .form fieldset .form__name input {
+    border: 2px solid #dc9302;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .main .form fieldset .form__name input {
+    border: 1px solid #dc9302;
+    font-size: 10px;
+  }
+}
+
+#body #grid-area .main .form fieldset .form__surname {
+  margin-right: 15px;
+}
+
+#body #grid-area .main .form fieldset .form__surname label {
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #body #grid-area .main .form fieldset .form__surname label {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #body #grid-area .main .form fieldset .form__surname label {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .main .form fieldset .form__surname label {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .main .form fieldset .form__surname label {
+    font-size: 15px;
+  }
+}
+
+#body #grid-area .main .form fieldset .form__surname input {
+  border: 3px solid #dc9302;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #body #grid-area .main .form fieldset .form__surname input {
+    border: 2px solid #dc9302;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #body #grid-area .main .form fieldset .form__surname input {
+    border: 2px solid #dc9302;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .main .form fieldset .form__surname input {
+    border: 2px solid #dc9302;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .main .form fieldset .form__surname input {
+    border: 1px solid #dc9302;
+    font-size: 10px;
+  }
+}
+
+#body #grid-area .main .form fieldset .form__mail {
+  margin-top: 20px;
+}
+
+#body #grid-area .main .form fieldset .form__mail label {
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 30px 0 20px 0;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #body #grid-area .main .form fieldset .form__mail label {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #body #grid-area .main .form fieldset .form__mail label {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .main .form fieldset .form__mail label {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .main .form fieldset .form__mail label {
+    font-size: 15px;
+  }
+}
+
+#body #grid-area .main .form fieldset .form__mail input {
+  border: 3px solid #dc9302;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #body #grid-area .main .form fieldset .form__mail input {
+    border: 2px solid #dc9302;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #body #grid-area .main .form fieldset .form__mail input {
+    border: 2px solid #dc9302;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .main .form fieldset .form__mail input {
+    border: 2px solid #dc9302;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .main .form fieldset .form__mail input {
+    border: 1px solid #dc9302;
+    font-size: 10px;
+  }
+}
+
+#body #grid-area .main .form fieldset .form__tel {
+  margin-right: 100px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #body #grid-area .main .form fieldset .form__tel {
+    margin-left: 18px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #body #grid-area .main .form fieldset .form__tel {
+    margin-left: 18px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .main .form fieldset .form__tel {
+    margin-left: 38px;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .main .form fieldset .form__tel {
+    margin-left: 45px;
+  }
+}
+
+#body #grid-area .main .form fieldset .form__tel label {
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #body #grid-area .main .form fieldset .form__tel label {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #body #grid-area .main .form fieldset .form__tel label {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .main .form fieldset .form__tel label {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .main .form fieldset .form__tel label {
+    font-size: 15px;
+  }
+}
+
+#body #grid-area .main .form fieldset .form__tel input {
+  border: 3px solid #dc9302;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #body #grid-area .main .form fieldset .form__tel input {
+    border: 2px solid #dc9302;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #body #grid-area .main .form fieldset .form__tel input {
+    border: 2px solid #dc9302;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .main .form fieldset .form__tel input {
+    border: 2px solid #dc9302;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .main .form fieldset .form__tel input {
+    border: 1px solid #dc9302;
+    font-size: 10px;
+  }
+}
+
+#body #grid-area .main .form fieldset .form__genero {
+  margin-top: 15px;
+  margin-left: 55px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .main .form fieldset .form__genero {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .main .form fieldset .form__genero {
+    margin-right: 25px;
+  }
+}
+
+#body #grid-area .main .form fieldset .form__genero select {
+  border: 3px solid #dc9302;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #body #grid-area .main .form fieldset .form__genero select {
+    border: 2px solid #dc9302;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #body #grid-area .main .form fieldset .form__genero select {
+    border: 2px solid #dc9302;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .main .form fieldset .form__genero select {
+    border: 2px solid #dc9302;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .main .form fieldset .form__genero select {
+    border: 1px solid #dc9302;
+    font-size: 10px;
+  }
+}
+
+#body #grid-area .main .form fieldset .form__genero option {
+  color: black;
+  background-color: #dc9302;
+}
+
+#body #grid-area .main .form .form__newsletter {
+  margin-top: 30px;
+}
+
+#body #grid-area .main .form .form__newsletter label {
+  color: black;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #body #grid-area .main .form .form__newsletter label {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #body #grid-area .main .form .form__newsletter label {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .main .form .form__newsletter label {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .main .form .form__newsletter label {
+    font-size: 15px;
+  }
+}
+
+#body #grid-area .main .form .form__txt {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#body #grid-area .main .form .form__txt textarea {
+  border: 3px solid #dc9302;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #body #grid-area .main .form .form__txt textarea {
+    border: 2px solid #dc9302;
+    color: black;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #body #grid-area .main .form .form__txt textarea {
+    border: 2px solid #dc9302;
+    color: black;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .main .form .form__txt textarea {
+    border: 2px solid #dc9302;
+    color: black;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .main .form .form__txt textarea {
+    border: 1px solid #dc9302;
+    color: black;
+    font-size: 10px;
+  }
+}
+
+#body #grid-area .main .form .form__button input {
+  margin-bottom: 40px;
+  font-size: 25px;
+  font-weight: 800;
+  padding: 5px 10px;
+  background-color: #dc9302;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #body #grid-area .main .form .form__button input {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #body #grid-area .main .form .form__button input {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .main .form .form__button input {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .main .form .form__button input {
+    font-size: 15px;
+  }
+}
+
+#body #grid-area .footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: footer;
+  background-color: black;
+  text-align: center;
+}
+
+#body #grid-area .footer__titulo h2 {
+  color: white;
+  font-size: 55px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #body #grid-area .footer__titulo h2 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .footer__titulo h2 {
+    font-size: 35px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .footer__titulo h2 {
+    font-size: 35px;
+    margin-top: 20px;
+  }
+}
+
+#body #grid-area .footer__redes nav ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .footer__redes nav ul li {
+    padding: 10px;
+  }
+}
+
+#body #grid-area .footer__redes nav ul li a img {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#body #grid-area .footer__redes nav ul li a img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #body #grid-area .footer__redes nav ul li a img {
+    width: 80px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .footer__redes nav ul li a img {
+    width: 60px;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .footer__redes nav ul li a img {
+    width: 50px;
+  }
+}
+
+#body #grid-area .footer__pie img {
+  width: 200px;
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #body #grid-area .footer__pie img {
+    width: 200px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .footer__pie img {
+    width: 200px;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .footer__pie img {
+    width: 200px;
+  }
+}
+
+#body #grid-area .footer__pie {
+  font-weight: 500;
+  color: white;
+  margin: 10px 80px 0% 80px;
+  text-align: center;
+  font-size: 17px;
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  #body #grid-area .footer__pie {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 479px) {
+  #body #grid-area .footer__pie {
+    font-size: 15px;
+  }
+}
