@@ -1,0 +1,382 @@
+#body{
+    background: url(../img/fndo-1.jpg) fixed no-repeat left bottom;
+    
+    @media (min-width: $desktopMin) and (max-width: $desktopMax){
+        background-image: $bgImg;
+    }
+    @media (min-width: $tabletMin) and (max-width: $tabletMax){
+        background-image: $bgImg;
+    }
+    @media (min-width: $mobileMin) and (max-width: $mobileMax){
+        background-image: $bgImg;
+    }
+    @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+        background-image: $bgImg;
+    }
+
+    #grid-area{
+        width: $widthTotal;
+        display: grid;
+        max-width: 1500px;
+        margin: 0% auto;
+        gap: 5px;
+        grid-template-areas: 
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+        grid-template-rows: 100px auto ;
+
+        .header{
+            grid-area: header;
+            text-align: center;
+            margin-bottom: 0%;
+            
+
+            .navbar-brand img{
+                margin-top: 20px;
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    width: 220px;
+                }
+            }
+
+            .nav-link {
+                padding: 5px 15px 0% 15px;
+                margin-bottom: 0%;
+                color: black;
+                font-weight: bolder;
+                transition: all .1s;
+ 
+                &:hover{
+                    color: $colorEfecto;
+                }
+                
+            }
+            
+        } 
+        .main{
+            width: $widthTotal;
+            grid-area: main;
+            text-align: center;
+            margin-top: 10px;
+            background: url(../img/fndo-1.jpg) fixed no-repeat right bottom;
+            
+           
+            
+            @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                background-image: $bgImg;
+                margin-top: 50px;
+            }
+
+            @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                background-image: $bgImg;
+                margin-top: 50px;
+            }
+
+            @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                background-image: $bgImg;
+                margin-top: 50px;
+            }
+
+            @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                background-image: $bgImg;
+                margin-top: 50px;
+            }
+
+            .section {
+                margin: auto;
+                @include flex-colum;
+
+                &__titulo {
+                    width: $widthTotal;
+                    text-align: center;
+                    padding: 30px;
+                    background-image: $bgFondo;
+                    margin: 20px auto 0% auto;
+
+                 h1 {
+                    font-size: 60px;
+                    font-weight: bold; 
+                    color:black;
+
+                    @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                        font-size: 50px;
+                    }
+                    @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                        font-size: 40px;
+                    }
+                    @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                        font-size: $fontMedium;
+                    }
+                    @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                        font-size: 20px;
+                    }
+                  }
+
+                }
+                #carouselExampleIndicators{
+                    margin-top: 10px;
+                    max-width: 1000px;
+                    
+    
+                }
+    
+
+            }
+
+            .articulo__titulo{
+                @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                    width: $widthTotal;
+                }
+
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    width: $widthTotal;
+                }
+
+                h2 {
+                    font-size: 30px;
+                    font-weight: 700;
+                    margin-top: 25px;
+                    margin-bottom: 15px;
+                    text-align: center;
+                    text-decoration: underline;
+    
+                    @media (min-width: $desktopMin) and (max-width: $desktopMax){
+                        margin-top: 20px;
+                        font-size: 45px;
+                    }
+                    @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                        font-size: 25px;
+                    }
+                }
+    
+                p {
+                    color: grey;
+                    font-weight: 600;
+                    width: 700px;
+                    font-size: medium;
+                    margin: 10px auto 30px auto;
+                    text-align: center;  
+                    
+                    @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                        width: 400px;
+                    }
+                    @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                        width: 300px;
+                    }
+                    @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                        width: 220px;
+                    }
+                }
+            }
+
+            .section__etiquetas {
+                margin: 50px auto ;
+                @include flex-colum;
+               
+                
+            
+
+                .section__etiquetasjw nav a img {
+                    width: 400px;
+                    @include eft;
+
+                    &:hover{
+                       @include eft-img;
+                    }
+                    @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                        width: 300px;
+                    }
+                    @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                        width: 300px;
+                    }
+                    @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                        width: 250px;
+                    }
+                } 
+
+                .section__etiquetasjw h3{
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+
+                .section__etiquetascl img {
+                    @include eft;
+                    width: 300px;
+                   
+
+                    &:hover{
+                        @include eft-img;
+                        
+                    }
+                    @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                        width: 200px;
+                    }
+                    @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                        width: 200px;
+                    }
+                    @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                        width: 170px;
+                    }
+                }
+
+                .section__etiquetascl h3{
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                
+            }
+
+            .section__beber {
+                background-color: $colorFondo;
+                @include flex-colum;
+
+                h2 {
+                    font-size: 45px;
+                    font-weight: 900;
+                    margin-top: 20px auto 10px auto;
+                    
+                    @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                        font-size: 40px;
+                    }
+                    @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                        font-size: 25px;
+                    }
+                    @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                        font-size: 20px;
+                    }
+                }
+                
+                img {
+                    width: 400px;
+                    margin-top: 20px;
+                    @include eft;
+
+                    &:hover{
+                        @include eft-img;
+                    }
+                    @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                        width: 300px;
+                    }
+                    @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                        width: 250px;
+                    }
+                    @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                        width: 210px;
+                    }
+                }
+
+                p {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: grey;
+                    margin-top: 20px;
+
+                    @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                        font-size: $fontSmall;
+                    }
+                    @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                        font-size: $fontSmall;
+                    }
+                    @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                        font-size: 13px;
+                    }
+                }
+            }
+            
+            .section__logo img {
+                width: 200px;
+                margin: 50px auto 50px auto;
+
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    width: 150px;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    width: 120px;
+                }
+            }
+
+        }
+        .footer {
+            grid-area: footer;
+            background-color: $bgFooter;
+            text-align: center;
+
+            &__titulo h2 {
+                color: white;
+                font-size: 55px;
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 50px;
+
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    font-size: 40px;
+                    margin-top: 20px;
+                }
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    font-size: $fontMedium;
+                    margin-top: 20px;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    font-size: $fontMedium;
+                    margin-top: 20px;
+                }
+            }
+
+            &__redes nav ul li {
+                @include flex-inline;
+
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    padding: 10px;
+                }
+
+                &  a img {
+                    @include eft;
+
+                    &:hover{
+                        @include eft-img;
+                    }
+                    @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                        width: 80px;
+                    }
+                    @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                        width: 60px;
+                    }
+                    @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                        width: 50px;
+                    }
+                }   
+            }
+         
+            &__pie img {
+                width: 200px;
+
+                @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    width: 200px;
+                }
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    width: 200px;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    width: 200px;
+                }
+
+            }
+
+            &__pie {
+                font-weight: 500;
+                color: white;
+                margin: 10px 80px 0% 80px;
+                text-align: center;
+                font-size: 17px;
+
+                @media (min-width: $mobileMin) and (max-width: $mobileMax){
+                    font-size: $fontSmall;
+                }
+                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
+                    font-size: $fontSmall;
+                }
+            }
+        } 
+    }
+
+}  
