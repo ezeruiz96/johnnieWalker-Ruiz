@@ -278,7 +278,7 @@
                         font-size: $fontSmall;
                     }
                     @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
-                        font-size: 13px;
+                        font-size: $fontSmall;
                     }
                 }
             }

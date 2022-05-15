@@ -92,7 +92,7 @@
                 margin: auto;
 
                 @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
-                    font-size: 16px;
+                    font-size: $fontSmall;
                 }
             }
         }
@@ -184,16 +184,16 @@
                     color: black;
 
                     @media (min-width: $desktopMin) and (max-width: $desktopMax){
-                        font-size: 15px;
+                        font-size: $fontLsmall;
                     }
                     @media (min-width: $tabletMin) and (max-width: $tabletMax){
-                        font-size: 15px;
+                        font-size: $fontLsmall;
                     }
                     @media (min-width: $mobileMin) and (max-width: $mobileMax){
-                        font-size: 15px;
+                        font-size: $fontLsmall;
                     }
                     @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
-                        font-size: 15px;
+                        font-size: $fontLsmall;
                     }
                 }
             }

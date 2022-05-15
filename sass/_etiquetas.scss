@@ -176,16 +176,16 @@
                     color: black;
 
                     @media (min-width: $desktopMin) and (max-width: $desktopMax){
-                        font-size: 15px;
+                        font-size: $fontLsmall;
                     }
                     @media (min-width: $desktopMin) and (max-width: $desktopMax){
-                        font-size: 15px;
+                        font-size: $fontLsmall;
                     }
                     @media (min-width: $mobileMin) and (max-width: $mobileMax){
-                        font-size: 15px;
+                        font-size: $fontLsmall;
                     }
                     @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
-                        font-size: 15px;
+                        font-size: $fontLsmall;
                     }
                 }
             }

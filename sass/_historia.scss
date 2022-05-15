@@ -100,11 +100,11 @@
                     font-size: 16px;
                 }
                 @media (min-width: $mobileMin) and (max-width: $mobileMax){
-                    font-size: 15px;
+                    font-size: $fontSmall;
                 }
                 @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
                     width: 320px;
-                    font-size: 14px;
+                    font-size: $fontSmall;
                 }
             }
             img{
@@ -139,11 +139,11 @@
                 }
                 @media (min-width: $mobileMin) and (max-width: $mobileMax){
                     width: 400px;
-                    font-size: 15px;
+                    font-size: $fontSmall;
                 }
                 @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
                     width: 320px;
-                    font-size: 15px;
+                    font-size: $fontSmall;
                 }
             }
         }
@@ -220,11 +220,11 @@
                     font-size: 17px;
                 }
                 @media (min-width: $mobileMin) and (max-width: $mobileMax){
-                    font-size: 15px;
+                    font-size: $fontSmall;
                 }
                 @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
                     width: 320px;
-                    font-size: 14px;
+                    font-size: $fontSmall;
                 }
             }
         }
@@ -274,11 +274,11 @@
                 }
                 @media (min-width: $mobileMin) and (max-width: $mobileMax){
                     width: 400px;
-                    font-size: 15px;
+                    font-size: $fontSmall;
                 }
                 @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
                     width: 320px;
-                    font-size: 14px;
+                    font-size: $fontSmall;
                 }
             }
         }
@@ -338,11 +338,11 @@
                 }
                 @media (min-width: $mobileMin) and (max-width: $mobileMax){
                     width: 400px;
-                    font-size: 15px;
+                    font-size: $fontSmall;
                 }
                 @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
                     width: 320px;
-                    font-size: 14px;
+                    font-size: $fontSmall;
                 }
             }
         }
@@ -429,11 +429,11 @@
                 }
                 @media (min-width: $mobileMin) and (max-width: $mobileMax){
                     width: 400px;
-                    font-size: 15px;
+                    font-size: $fontSmall;
                 }
                 @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
                     width: 320px;
-                    font-size: 14px;
+                    font-size: $fontSmall;
                 }
             }
         }
@@ -515,11 +515,11 @@
                 }
                 @media (min-width: $mobileMin) and (max-width: $mobileMax){
                     width: 400px;
-                    font-size: 15px;
+                    font-size: $fontSmall;
                 }
                 @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
                     width: 320px;
-                    font-size: 14px;
+                    font-size: $fontSmall;
                 }
             }
         }
@@ -601,11 +601,11 @@
                 }
                 @media (min-width: $mobileMin) and (max-width: $mobileMax){
                     width: 400px;
-                    font-size: 15px;
+                    font-size: $fontSmall;
                 }
                 @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
                     width: 320px;
-                    font-size: 14px;
+                    font-size: $fontSmall;
                 }
             }
         }
@@ -626,11 +626,11 @@
             }
             @media (min-width: $mobileMin) and (max-width: $mobileMax){
                 width: 400px;
-                font-size: 15px;
+                font-size: $fontSmall;
             }
             @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
                 width: 320px;
-                font-size: 14px;
+                font-size: $fontSmall;
             }
         }
         .section__historia-final {

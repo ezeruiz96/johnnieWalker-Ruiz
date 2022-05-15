@@ -409,19 +409,19 @@
 
 @media (min-width: 600px) and (max-width: 767px) {
   #body #grid-area .main .section__beber p {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 599px) {
   #body #grid-area .main .section__beber p {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 230px) and (max-width: 479px) {
   #body #grid-area .main .section__beber p {
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 
@@ -561,13 +561,13 @@
 
 @media (min-width: 480px) and (max-width: 599px) {
   #body #grid-area .footer__pie {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 230px) and (max-width: 479px) {
   #body #grid-area .footer__pie {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -721,14 +721,14 @@
 
 @media (min-width: 480px) and (max-width: 599px) {
   #grid-area-historia .main-historia .section__historia-titulo h3 {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 230px) and (max-width: 479px) {
   #grid-area-historia .main-historia .section__historia-titulo h3 {
     width: 320px;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -784,14 +784,14 @@
 @media (min-width: 480px) and (max-width: 599px) {
   #grid-area-historia .main-historia .section__historia-titulo p {
     width: 400px;
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 230px) and (max-width: 479px) {
   #grid-area-historia .main-historia .section__historia-titulo p {
     width: 320px;
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -936,14 +936,14 @@
 
 @media (min-width: 480px) and (max-width: 599px) {
   #grid-area-historia .main-historia .section__historia p {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 230px) and (max-width: 479px) {
   #grid-area-historia .main-historia .section__historia p {
     width: 320px;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -1023,14 +1023,14 @@
 @media (min-width: 480px) and (max-width: 599px) {
   #grid-area-historia .main-historia .section__historia2 p {
     width: 400px;
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 230px) and (max-width: 479px) {
   #grid-area-historia .main-historia .section__historia2 p {
     width: 320px;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -1122,14 +1122,14 @@
 @media (min-width: 480px) and (max-width: 599px) {
   #grid-area-historia .main-historia .section__historia3 p {
     width: 400px;
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 230px) and (max-width: 479px) {
   #grid-area-historia .main-historia .section__historia3 p {
     width: 320px;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -1283,14 +1283,14 @@
 @media (min-width: 480px) and (max-width: 599px) {
   #grid-area-historia .main-historia .section__historia4 p {
     width: 400px;
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 230px) and (max-width: 479px) {
   #grid-area-historia .main-historia .section__historia4 p {
     width: 320px;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -1440,14 +1440,14 @@
 @media (min-width: 480px) and (max-width: 599px) {
   #grid-area-historia .main-historia .section__historia5 p {
     width: 400px;
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 230px) and (max-width: 479px) {
   #grid-area-historia .main-historia .section__historia5 p {
     width: 320px;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -1606,14 +1606,14 @@
 @media (min-width: 480px) and (max-width: 599px) {
   #grid-area-historia .main-historia .section__historia6 p {
     width: 400px;
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 230px) and (max-width: 479px) {
   #grid-area-historia .main-historia .section__historia6 p {
     width: 320px;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -1642,14 +1642,14 @@
 @media (min-width: 480px) and (max-width: 599px) {
   #grid-area-historia .main-historia .section__historia7 {
     width: 400px;
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 230px) and (max-width: 479px) {
   #grid-area-historia .main-historia .section__historia7 {
     width: 320px;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -1809,13 +1809,13 @@
 
 @media (min-width: 480px) and (max-width: 599px) {
   #grid-area-historia .footer__pie {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 230px) and (max-width: 479px) {
   #grid-area-historia .footer__pie {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -2075,25 +2075,25 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   #grid-area-etiquetas .main-etiquetas .grid-etiquetas .grid__img-etiquetas p {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   #grid-area-etiquetas .main-etiquetas .grid-etiquetas .grid__img-etiquetas p {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 599px) {
   #grid-area-etiquetas .main-etiquetas .grid-etiquetas .grid__img-etiquetas p {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 
 @media (min-width: 230px) and (max-width: 479px) {
   #grid-area-etiquetas .main-etiquetas .grid-etiquetas .grid__img-etiquetas p {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 
@@ -2233,13 +2233,13 @@
 
 @media (min-width: 480px) and (max-width: 599px) {
   #grid-area-etiquetas .footer__pie {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 230px) and (max-width: 479px) {
   #grid-area-etiquetas .footer__pie {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -2515,25 +2515,25 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   #grid-area-johnAndSong .main-johnAndSong .grid-johnAndSong .grid__img-johnAndSong p {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 
 @media (min-width: 600px) and (max-width: 767px) {
   #grid-area-johnAndSong .main-johnAndSong .grid-johnAndSong .grid__img-johnAndSong p {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 599px) {
   #grid-area-johnAndSong .main-johnAndSong .grid-johnAndSong .grid__img-johnAndSong p {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 
 @media (min-width: 230px) and (max-width: 479px) {
   #grid-area-johnAndSong .main-johnAndSong .grid-johnAndSong .grid__img-johnAndSong p {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 
@@ -2690,13 +2690,13 @@
 
 @media (min-width: 480px) and (max-width: 599px) {
   #grid-area-johnAndSong .footer__pie {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 230px) and (max-width: 479px) {
   #grid-area-johnAndSong .footer__pie {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -3011,12 +3011,12 @@
 
 @media (min-width: 480px) and (max-width: 599px) {
   #body-contacto #grid-areaContacto .footer__pie {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 230px) and (max-width: 479px) {
   #body-contacto #grid-areaContacto .footer__pie {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
