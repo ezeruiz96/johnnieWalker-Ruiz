@@ -1,10 +1,5 @@
 
-@import "vars";
-@import "reset";
-@import "mixin";
-
-
-#grid-area{
+#grid-area-historia{
     width: $widthTotal;
     display: grid;
     max-width: 1500px;
@@ -41,7 +36,7 @@
         }
 
     }
-    .main{
+    .main-historia{
         width: $widthTotal;
         grid-area: main;
         text-align: center;
@@ -63,7 +58,7 @@
             margin-top: 50px;
         }
        
-        .section__titulo{
+        .section__historia-titulo{
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -638,7 +633,7 @@
                 font-size: 14px;
             }
         }
-        .section__final {
+        .section__historia-final {
             color: $colorSecundario;
             width: 500px;
             font-size: 35px;

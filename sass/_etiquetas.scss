@@ -1,13 +1,9 @@
 
-@import "vars";
-@import "reset";
-@import "mixin";
-
-#grid-area{
-    width: 100%;
+#grid-area-etiquetas{
+    width: $widthTotal;
     display: grid;
     max-width: 1500px;
-    margin: 0 auto;
+    margin: 0% auto;
     gap: 5px;
     grid-template-areas: 
     "header header header header"
@@ -19,6 +15,7 @@
         grid-area: header;
         text-align: center;
         margin-bottom: 0%;
+        
 
         .navbar-brand img{
             margin-top: 20px;
@@ -26,6 +23,7 @@
                 width: 220px;
             }
         }
+
         .nav-link {
             padding: 5px 15px 0% 15px;
             margin-bottom: 0%;
@@ -38,14 +36,15 @@
             }
             
         }
-
-    }
-    .main{
+        
+    } 
+    .main-etiquetas{
         width: $widthTotal;
         grid-area: main;
         text-align: center;
         margin-top: 10px;
- 
+       
+        
         @media (min-width: $desktopMin) and (max-width: $desktopMax){
             margin-top: 50px;
         }
@@ -62,12 +61,12 @@
             margin-top: 50px;
         }
 
-        .section__title {
+        .section__titulo-etiquetas{
             width: $widthTotal;
             text-align: center;
             padding: 30px;
-            margin: 20px auto 5px auto;
-            background-image: url(../img/banner-titulo.jpg);
+            background-image: $bgFondo;
+            margin: 20px auto 30px auto;
 
             h1{
                 font-size: 60px;
@@ -85,21 +84,10 @@
                 }
                 @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
                     font-size: 25px;
-                    margin-top: 50px;
-                }
-            }
-            h4{
-                padding: 5px 5px;
-                font-size: 20px;
-                font-weight: 700;
-                margin: auto;
-
-                @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
-                    font-size: 16px;
                 }
             }
         }
-        .grid {
+        .grid-etiquetas {
             width: 100%;
             max-width: 900px;
             margin: 30px auto;
@@ -107,7 +95,7 @@
             grid-template-columns: 1fr 1fr 1fr ;
             grid-template-rows: 1fr 1fr ;
             gap: 5px;
-            justify-content: center;
+            justify-items: center;
             align-items: center;
 
             @media (min-width: $desktopMin) and (max-width: $desktopMax){
@@ -134,38 +122,38 @@
             }
             @media (min-width: $mobileMin) and (max-width: $mobileMax){
                 width: 100%;
-                max-width: 500px;
+                max-width: 400px;
                 margin: 30px auto;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr;
-                gap: 5px;
+                gap: 2px;
                 justify-items: center;
                 align-items: center;
             }
             @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
                 width: 100%;
-                max-width: 500px;
+                max-width: 400px;
                 margin: 30px auto;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr;
-                gap: 5px;
+                gap: 1px;
                 justify-items: center;
                 align-items: center;
             }
-    
-            .grid__img{
-    
-                img{
-                    text-align: center;
+
+            .grid__img-etiquetas{
+
+                img {
+                    width: 250px;
                     transition: all .5s;
                     object-fit: cover;
 
                     @media (min-width: $desktopMin) and (max-width: $desktopMax){
                         width: 250px;
                     }
-                    @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    @media (min-width: $desktopMin) and (max-width: $desktopMax){
                         width: 230px;
                     }
                     @media (min-width: $mobileMin) and (max-width: $mobileMax){
@@ -174,13 +162,14 @@
                     @media (min-width: $minMobileMin) and (max-width: $minMobileMax){
                         width: 200px;
                     }
-    
+                    
+
                     &:hover{
                         transform: scale(1.05);
                     }
                 }
                 p{
-                    margin-top: 15px;
+                    margin-top: 5px;
                     font-size: 15px;
                     font-weight: 800;
                     text-align: center;
@@ -189,7 +178,7 @@
                     @media (min-width: $desktopMin) and (max-width: $desktopMax){
                         font-size: 15px;
                     }
-                    @media (min-width: $tabletMin) and (max-width: $tabletMax){
+                    @media (min-width: $desktopMin) and (max-width: $desktopMax){
                         font-size: 15px;
                     }
                     @media (min-width: $mobileMin) and (max-width: $mobileMax){
@@ -200,43 +189,25 @@
                     }
                 }
             }
-           
         }
-       
         .card-body{
             background-color: $colorFondo;
-            padding: 10px;
-    
-            h5{
-                text-align: center;
-                font-weight: bolder;
-                font-size: 30px;
-                background-image: url(../img/banner-titulo.jpg);
-                padding: 5px;
-            }
-            p{
-                padding: 5px;
-                color: grey;
-                font-weight: bolder;
-                font-size: 20px;
-                text-align: center;
-            }
         }
         .container-fuid nav a img{
-            margin: 50px auto 0% auto;
+            margin: 20px auto 0% auto;
             transition: all .5s;
            object-fit: cover;
-    
-           &:hover{
-            transform: scale(1.05);
+
+          &:hover{
+           transform: scale(1.05); 
            }
         }
     }
-    .footer {
+    .footer{
         grid-area: footer;
         background-color: $bgFooter;
         text-align: center;
-
+        
         &__titulo h2 {
             color: white;
             font-size: 55px;
@@ -309,6 +280,5 @@
                 font-size: $fontSmall;
             }
         }
- 
     }
 }
