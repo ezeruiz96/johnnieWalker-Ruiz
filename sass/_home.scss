@@ -1,4 +1,4 @@
-#body{
+#body-home{
     background: url(../img/fndo-1.jpg) fixed no-repeat left bottom;
     
     @media (min-width: $desktopMin) and (max-width: $desktopMax){
@@ -14,7 +14,7 @@
         background-image: $bgImg;
     }
 
-    #grid-area{
+    #grid-area-home{
         width: $widthTotal;
         display: grid;
         max-width: 1500px;
@@ -53,7 +53,7 @@
             }
             
         } 
-        .main{
+        .main-home{
             width: $widthTotal;
             grid-area: main;
             text-align: center;
